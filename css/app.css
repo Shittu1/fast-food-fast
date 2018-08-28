@@ -1,0 +1,109 @@
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  background: #ff8300;
+}
+
+.generalfeatures {
+	padding: 0 40px;
+}
+
+div#header {
+	padding-top: 10px;
+}
+
+div.hearderparts {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+div#brand {
+	width: 35%;
+	min-width: 300px;
+	display: flex;
+}
+
+#search {
+	width: 35%;
+	display: flex;
+}
+
+#cartsignin {
+	width: 15%;
+	min-width: 150px;
+	display: flex;
+}
+
+i.fas.fa-utensils {
+	font-size: 50px;
+	margin-right: 10px;
+	padding-top: 5px;
+	color: #fff;
+}
+
+h1#brandname {
+	margin: 0 0 0 10px;
+	font-size: 30px;
+	text-align: center;
+	padding-top: 13px;
+	color: #00803e;
+}
+
+input[type=text], button#searchicon {
+	height: 40px;
+	font-size: 25px;
+}
+
+#search input[type=text] {
+	width: 80%;
+	min-width: 100px;
+}
+
+#search button#searchicon {
+	width: 20%;
+	min-width: 50px;
+}
+
+i.fas.fa-shopping-cart, span#signin {
+	border: 1px solid grey;
+	text-align: center;
+	padding-top: 3px;
+	font-size: 25px;
+	height: 40px;
+}
+
+i.fas.fa-shopping-cart{
+	width: 40%;
+	color: #fff;
+}
+
+span#signin {
+	width: 60%;
+	color: #00803e;
+}
+
+
+
+
+@media only screen and (max-width: 772px) {
+	div.hearderparts {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	#cartsignin {
+		margin-top: 15px;
+	}
+} 
+
+@media only screen and (max-width: 541px) {
+	#search {
+		margin-top: 15px;
+	}
+} 
