@@ -36,6 +36,7 @@ div#brand {
 	width: 15%;
 	min-width: 150px;
 	display: flex;
+	justify-content: space-between;
 }
 
 i.fas.fa-utensils {
@@ -61,6 +62,7 @@ input[type=text], button#searchicon {
 #search input[type=text] {
 	width: 80%;
 	min-width: 100px;
+	padding-left: 10px;
 }
 
 #search button#searchicon {
@@ -69,7 +71,6 @@ input[type=text], button#searchicon {
 }
 
 i.fas.fa-shopping-cart, span#signin {
-	border: 1px solid grey;
 	text-align: center;
 	padding-top: 3px;
 	font-size: 25px;
@@ -79,11 +80,25 @@ i.fas.fa-shopping-cart, span#signin {
 i.fas.fa-shopping-cart{
 	width: 40%;
 	color: #fff;
+	padding-top: 5px;
+}
+
+i.fas.fa-shopping-cart:hover {
+	font-size: 23px;
 }
 
 span#signin {
-	width: 60%;
+	width: 60%;	
+}
+
+span#signin a {
+	text-decoration: none;
 	color: #00803e;
+}
+
+span#signin a:hover {
+	color: blue;
+	font-size: 23px;
 }
 
 
@@ -97,8 +112,10 @@ span#signin {
 		flex-wrap: wrap;
 	}
 
-	#cartsignin {
+	div#cartsignin {
+		display: flex;
 		margin-top: 15px;
+		padding: 0 0 0 25px;
 	}
 } 
 
@@ -106,4 +123,12 @@ span#signin {
 	#search {
 		margin-top: 15px;
 	}
+
+} 
+
+@media only screen and (max-width: 390px) {
+	.generalfeatures {
+		padding: 0 10px;
+	}
+
 } 
