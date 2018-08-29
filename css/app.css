@@ -19,6 +19,12 @@ div#header {
 	padding-top: 10px;
 }
 
+#contact {
+	font-size: 15px;
+	margin-left: 10px;
+	margin-bottom: 20px;
+}
+
 div.hearderparts {
 	display: flex;
 	justify-content: space-between;
