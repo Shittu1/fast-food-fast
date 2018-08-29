@@ -5,7 +5,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 21px;
   background: #ff8300;
-  min-width: 300px;
+  min-width: 320px;
 }
 
 /*********************************************************************/
@@ -229,6 +229,51 @@ a#seemorefeatures:hover {
 }
 
 
+
+
+
+/*********************************************************************/
+/******************************Footer********************************/
+/*******************************************************************/
+
+div.socialmediaicons, div.copyrightinfo {
+	width: 100vw;
+}
+
+div.socialmediaicons {
+	height: 18vh;
+	background: rgba(255,67,0, 0.5);
+}
+
+div.copyrightinfo {
+	height: 50px;
+	background: rgba(255,67, 0, 0.8);
+}
+
+div.footerfeatures {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+/*	width: 100%;*/
+	
+}
+
+div.socialmediaicons {
+	font-size: 40px;
+	color: #00803e;
+	/*padding: 0 40%;*/
+}
+
+div.copyrightinfo {
+	font-size: 18px;
+	color: #fff;
+}
+
+
+
+
+
+
 @media only screen and (max-width: 772px) {
 	div.hearderparts {
 		display: flex;
@@ -272,6 +317,9 @@ a#seemorefeatures:hover {
 	} 
 
 } 
+
+
+
 
 @media only screen and (max-width: 541px) {
 	#search {
