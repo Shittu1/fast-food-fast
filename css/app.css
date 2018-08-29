@@ -3,9 +3,13 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 21px;
   background: #ff8300;
 }
+
+/*********************************************************************/
+/*Logo, Brand Name, Search input, Shopping cart logo and sign in tab*/
+/*******************************************************************/
 
 .generalfeatures {
 	padding: 0 40px;
@@ -97,9 +101,35 @@ span#signin a {
 }
 
 span#signin a:hover {
-	color: blue;
+	color: #fff;
 	font-size: 23px;
 }
+
+
+
+/*********************************************************************/
+/***************************Navigation Bar***************************/
+/*******************************************************************/
+
+#navbar {
+	justify-content: space-around;
+	background: #00803e;
+	height: 50px;
+	width: 100vw;
+}
+
+.navbarcontent {
+	color: #fff;
+	text-decoration: none;
+}
+
+a.navbarcontent:hover {
+	color: #ff8300; 
+}
+
+
+
+
 
 
 
@@ -122,6 +152,18 @@ span#signin a:hover {
 @media only screen and (max-width: 541px) {
 	#search {
 		margin-top: 15px;
+	}
+
+	#navbar {
+		flex-direction: column;
+		background: #00803e;
+		height: 60px;
+		width: 100vw;
+	}
+
+	div#brand {
+		justify-content: space-around;
+		margin: 0 auto;
 	}
 
 } 
