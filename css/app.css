@@ -5,6 +5,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 21px;
   background: #ff8300;
+  min-width: 320px;
 }
 
 /*********************************************************************/
@@ -135,7 +136,7 @@ a.navbarcontent:hover {
 }
 
 /*********************************************************************/
-/************************Cover imageSection**************************/
+/************************Cover image Section*************************/
 /*******************************************************************/
 img#coverimage {
 	height: 85vh;
@@ -148,6 +149,59 @@ img#coverimage {
     right: 60px;
 }
 
+/*********************************************************************/
+/************************Featured Product**************************/
+/*******************************************************************/
+
+h3#featureheading {
+	background: #00803e;
+	height: 50px;
+	padding-top: 10px;
+	color: #fff;
+}
+
+div#featuredproduct {
+	padding: 20px;
+	background: #fff;
+	width: 260px;
+}
+
+img.featureimage {
+	width: 98%;
+}
+
+div.priceandcart {
+	display: flex;
+	justify-content: space-between;
+	background: #ff8300;
+	height: auto;
+}
+
+p.featuredescription {
+	font-size: 16px;
+	padding-top: 0;
+	margin-top: 5px;
+}
+
+span.price {
+	padding-top: 2px;
+	margin-left: 8px;
+	color: #00803e;
+}
+
+span.price, a.addtocart {
+	margin-top: 15px;
+	margin-bottom: 15px;
+} 
+a.addtocart {
+	text-decoration: none;
+	color: white;
+	margin-right: 8px;
+}
+
+a.addtocart:hover {
+	color: #00803e;
+}
 
 
 
@@ -164,6 +218,23 @@ img#coverimage {
 		margin-top: 15px;
 		padding: 0 0 0 25px;
 	}
+
+	div.eachfeatures, p.featuredescription {
+		font-size: 18px;
+	}
+
+	div.priceandcart {
+		flex-direction: column;
+		text-align: center;
+		padding: 5px 0;
+	}
+
+	span.price, a.addtocart {
+		margin: 0;
+
+	} 
+	
+
 } 
 
 @media only screen and (max-width: 541px) {
@@ -184,22 +255,38 @@ img#coverimage {
 	}
 
 	img#coverimage {
-		height: 65vh;
+		height: 55vh;
 		width: 100%;
 	}
 
 	.bottom-left {
-    	position: absolute;
-    	bottom: -50px;
- 	   right: 60px;
+    	display: none;
 	}
-
-
+	
+	div#featuredproduct {
+		padding: 10px;
+		background: #fff;
+		width: 45%;
+	}
+	
 } 
 
 @media only screen and (max-width: 390px) {
 	.generalfeatures {
 		padding: 0 10px;
+	}
+
+	img#coverimage {
+		height: 45vh;
+		min-width: 260px;
+	}
+
+	.bottom-left {
+    	display: none;
+	}
+
+	div.eachfeatures, p.featuredescription {
+		font-size: 14px;
 	}
 
 } 
