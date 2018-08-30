@@ -1,11 +1,15 @@
 * {box-sizing: border-box;}
 
+html, body {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 body {
-  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 21px;
   background: #ff8300;
-  min-width: 320px;
 }
 
 /*********************************************************************/
@@ -16,11 +20,11 @@ body {
 	padding: 0 40px;
 }
 
-div#header {
+div.header {
 	padding-top: 10px;
 }
 
-#contact {
+.contact {
 	font-size: 15px;
 	margin-left: 10px;
 	margin-bottom: 20px;
@@ -33,18 +37,18 @@ div.hearderparts {
 	align-items: center;
 }
 
-div#brand {
+div.brand {
 	width: 35%;
 	min-width: 300px;
 	display: flex;
 }
 
-#search {
+.search {
 	width: 35%;
 	display: flex;
 }
 
-#cartsignin {
+.cartsignin {
 	width: 15%;
 	min-width: 150px;
 	display: flex;
@@ -58,7 +62,7 @@ i.fas.fa-utensils {
 	color: #fff;
 }
 
-h1#brandname {
+h1.brandname {
 	margin: 0 0 0 10px;
 	font-size: 30px;
 	text-align: center;
@@ -66,18 +70,18 @@ h1#brandname {
 	color: #00803e;
 }
 
-input[type=text], button#searchicon {
+input[type=text], button.searchicon {
 	height: 40px;
 	font-size: 25px;
 }
 
-#search input[type=text] {
+.search input[type=text] {
 	width: 80%;
 	min-width: 100px;
 	padding-left: 10px;
 }
 
-#search button#searchicon {
+.search button.searchicon {
 	width: 20%;
 	min-width: 50px;
 }
@@ -250,18 +254,24 @@ div.copyrightinfo {
 	background: rgba(255,67, 0, 0.8);
 }
 
-div.footerfeatures {
+div.socialmediaicons, div.copyrightinfo {
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
-/*	width: 100%;*/
-	
+
 }
 
 div.socialmediaicons {
 	font-size: 40px;
+	padding: 0 40%;
+}
+
+i.fab.fa-facebook,
+i.fab.fa-twitter-square,
+i.fab.fa-instagram,
+i.fab.fa-google-plus-square {
+	padding: 0 5px;
 	color: #00803e;
-	/*padding: 0 40%;*/
 }
 
 div.copyrightinfo {
@@ -282,7 +292,7 @@ div.copyrightinfo {
 		flex-wrap: wrap;
 	}
 
-	div#cartsignin {
+	div.cartsignin {
 		display: flex;
 		margin-top: 15px;
 		padding: 0 0 0 25px;
@@ -318,8 +328,17 @@ div.copyrightinfo {
 
 } 
 
+@media screen and (max-width: 772px) and (min-width: 541px) {
+  div.cartsignin {
+	margin: 0 auto;
+  }
+}
 
-
+@media screen and (max-width: 643px) and (min-width: 547px) {
+  div.featuredproduct {
+		width: 46%;
+	}
+}
 
 @media only screen and (max-width: 541px) {
 	#search {
@@ -333,7 +352,7 @@ div.copyrightinfo {
 		width: 100vw;
 	}
 
-	div#brand {
+	div.brand {
 		justify-content: space-around;
 		margin: 0 auto;
 	}
@@ -375,6 +394,19 @@ div.copyrightinfo {
 
 	div.eachfeatures, p.featuredescription {
 		font-size: 14px;
+	}
+
+	div.contact {
+		display: flex;
+		flex-direction: column;
+	}
+
+	span.separator {
+		display: none;
+	}
+
+	body {
+		overflow: hi
 	}
 
 } 
