@@ -4,6 +4,7 @@ html, body {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
+    /*min-width: 320px;*/
 }
 
 body {
@@ -341,7 +342,7 @@ div.copyrightinfo {
 }
 
 @media only screen and (max-width: 541px) {
-	#search {
+	.search {
 		margin-top: 15px;
 	}
 
@@ -385,7 +386,7 @@ div.copyrightinfo {
 
 	img#coverimage {
 		height: 45vh;
-		min-width: 260px;
+		min-width: 25%;
 	}
 
 	.bottom-left {
@@ -404,9 +405,36 @@ div.copyrightinfo {
 	span.separator {
 		display: none;
 	}
+} 
 
-	body {
-		overflow: hi
+@media only screen and (max-width: 320px) {
+	i.fas.fa-utensils {
+		display: none;
 	}
 
-} 
+	div.hearderparts {
+		flex-direction: column;
+	}
+
+	body {
+		font-size: 18px;
+	}
+
+	h1.brandname, div.hearderparts.generalfeatures {
+		padding: 0;
+		margin: 0;
+		width: auto;
+	}
+	h1.brandname {
+		font-size: 25px;
+		margin-left: -32px;
+	}
+	.search {
+		width: 200px;
+	} 
+	div.cartsignin {
+		margin-left: -15px;
+	}
+	
+
+}
