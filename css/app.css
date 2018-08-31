@@ -87,7 +87,7 @@ input[type=text], button.searchicon {
 	min-width: 50px;
 }
 
-i.fas.fa-shopping-cart, span#signin {
+i.fas.fa-shopping-cart, span.signin {
 	text-align: center;
 	padding-top: 3px;
 	font-size: 25px;
@@ -104,21 +104,24 @@ i.fas.fa-shopping-cart:hover {
 	font-size: 23px;
 }
 
-span#signin {
-	width: 60%;	
+span.signin {
+	width: 60%;
+	font-size: 20px;
+	margin-top: 6px;	
 }
 
-span#signin a {
+span.signin a, div.contact a {
 	text-decoration: none;
 	color: #00803e;
 }
 
-span#signin a:hover {
+span.signin a:hover {
 	color: #fff;
-	font-size: 23px;
 }
 
-
+div.contact a:hover {
+	color: #fff;
+}
 
 /*********************************************************************/
 /***************************Navigation Bar***************************/
@@ -235,6 +238,80 @@ a#seemorefeatures:hover {
 
 
 
+/*********************************************************************/
+/******************************SIGN-UP********************************/
+/*******************************************************************/
+
+div#signup {
+	max-width: 35%;
+	padding: 2%;
+	border: 4px dashed #00803e;
+	border-radius: 10px;
+	margin: 0 auto;
+}
+
+div#signup h1 {
+	margin: 0;
+	font-size: 23px;
+	text-align: center;
+}
+
+.signupinput, 
+.all {					/***Sign-up form***/
+	width: 100%;
+}
+
+.signupinput {
+	padding: 5px;
+	margin-bottom: 10px;
+	height: 30px;
+}
+
+div#signup input[type=submit] {
+	background-color: #00803e;
+	border: none;
+	color: #fff;
+	font-size: 20px;
+}
+
+div#signup input[type=submit]:hover,
+form.signinform input[type=submit]:hover {  /***Sign-up form***/
+	color: #00803e;
+	background-color: #fff;
+}
+
+
+/*********************************************************************/
+/******************************SIGN-IN FORM**************************/
+/*******************************************************************/
+section.signinformcontainer.generalfeatures h4 {
+	text-align: center;
+}
+
+form.signinform {
+	display: flex;
+	flex-direction: column;
+	width: 35%;
+	margin: 0 auto;
+}
+
+.signinformlabelone {
+	margin-bottom: 5px;
+}
+.signinformlabeltwo {
+	margin: 22px 0 5px 0;
+}
+
+form.signinform input[type=submit] {
+	border: none;
+	margin-top: 40px;
+	height: 43px;
+	background-color: #00803e;
+	color: #fff;
+	font-size: 20px
+
+}
+
 
 
 /*********************************************************************/
@@ -327,6 +404,14 @@ div.copyrightinfo {
 		margin: 0;
 	} 
 
+	div#signup {
+		max-width: 70%;
+	}
+
+	form.signinform {
+		width: 60%;
+	}
+
 } 
 
 @media screen and (max-width: 772px) and (min-width: 541px) {
@@ -376,6 +461,10 @@ div.copyrightinfo {
 		background: #fff;
 		width: 45%;
 	}
+
+	form.signinform {
+		width: 80%;
+	}
 	
 } 
 
@@ -405,6 +494,11 @@ div.copyrightinfo {
 	span.separator {
 		display: none;
 	}
+
+	div#signup {
+		max-width: 90%;
+	}
+
 } 
 
 @media only screen and (max-width: 320px) {
@@ -436,5 +530,9 @@ div.copyrightinfo {
 		margin-left: -15px;
 	}
 	
+
+	form.signinform {
+		width: 95%;
+	}
 
 }
