@@ -328,7 +328,56 @@ div#aboutcontainer p {
 }
 
 
+/*********************************************************************/
+/****************************ADMIN PAGE***************************/
+/*******************************************************************/
+section#admindashboard{
+	display: flex;
+	justify-content: space-between;
+}
 
+/*#adminsidebar, #adminbody {
+	border: 2px solid #00803e;
+	padding: 10px;
+}*/
+
+#adminsidebar {
+	width: 20%;
+	display: flex;
+	flex-direction: column;
+}
+
+#adminbody {
+	width: 77%;
+}
+
+#adminsidebar a {
+	text-decoration: none;
+	margin-bottom: 10px;
+	border: 1px solid #00803e;
+	border-radius: 5px;
+	padding: 10px;
+	color: #00803e;
+}
+
+#adminsidebar a:hover {
+	background-color: #dff9fb;
+	color: #6ab04c;
+}
+
+#allproducts {
+	border-collapse: collapse;
+    width: 100%;
+}
+
+#allproducts td, #allproducts th {
+    border: 1px solid #00803e;
+    padding: 8px;
+}
+
+#allproducts tr:nth-child(even){
+	background-color: #00803e;
+}
 /*********************************************************************/
 /******************************Footer********************************/
 /*******************************************************************/
