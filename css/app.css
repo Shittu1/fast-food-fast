@@ -313,6 +313,21 @@ form.signinform input[type=submit] {
 }
 
 
+/*********************************************************************/
+/****************************ABOUT-US PAGE***************************/
+/*******************************************************************/
+
+
+div#aboutcontainer {
+	margin: 0 auto;
+	width: 80%;
+}
+
+div#aboutcontainer p {
+	text-align: justify;
+}
+
+
 
 /*********************************************************************/
 /******************************Footer********************************/
@@ -495,7 +510,7 @@ div.copyrightinfo {
 		display: none;
 	}
 
-	div#signup {
+	div#signup, div#aboutcontainer {
 		max-width: 90%;
 	}
 
@@ -531,7 +546,7 @@ div.copyrightinfo {
 	}
 	
 
-	form.signinform {
+	form.signinform, div#aboutcontainer{
 		width: 95%;
 	}
 
