@@ -52,6 +52,7 @@
 	
 
 	<!-----------Admin Area---------->
+	
 	<section class="admindashboard generalfeatures">
 		<div class="adminsidebar">
 			<a href="admin.html">Products</a>
@@ -60,41 +61,26 @@
 			<a href="#">Change Password</a>
 		</div>
 		<div class="adminbody">
-			<table id="allproducts">
-				<thead>
-					<tr>
-						<th></th>
-						<th>Product</th>
-						<th>Details</th>
-						<th>Price</th>
-						<th>Date</th>
-						<th>Edit</th>
-						<th>Delete</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td><input type="checkbox"></td>
-						<td>Product name</td>
-						<td>Piza</td>
-						<td>$60</td>
-						<td>31/08/2018</td>
-						<td><i class="far fa-edit"></i></td>
-						<td><i class="far fa-trash-alt"></i></td>
-					</tr>
-				</tbody>
-				<tbody>
-					<tr>
-						<td><input type="checkbox"></td>
-						<td>Product name</td>
-						<td>Piza</td>
-						<td>$60</td>
-						<td>31/08/2018</td>
-						<td><i class="far fa-edit"></i></td>
-						<td><i class="far fa-trash-alt"></i></td>
-					</tr>
-				</tbody>
-			</table>
+			<h4>ADD PRODUCT</h4>
+			<form class="signinform" action="">
+				<label class="" for="product">Name of Product</label>
+				<input class="" type="text">
+				<br/>
+				<label class="" for="details">Details</label>
+				<input class="" type="text">
+				<br/>
+				<label class="" for="price">Price</label>
+				<input class="" type="text">
+				<br/>
+				<label class="" for="date">Date</label>
+				<input class="" type="date">
+				<br/>
+				<label for="file-upload" class="custom-file-upload">
+    Upload Picture
+</label>
+				<input id="file-upload" type="file"/>
+				<input class="" type="submit" value="Add Product">
+			</form>
 		</div>
 	</section>
 
@@ -103,11 +89,10 @@
 	<br/>
 	
 
-	<br/>
-	<br/>
-		<br/>
-	<br/>
-	
+
+
+	<br />
+	<br />
 	<footer class="footercontainer">
 		<div class="socialmediaicons">
 			<a class="eachsocialmediaicon" href="">

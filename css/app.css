@@ -328,30 +328,42 @@ div#aboutcontainer p {
 }
 
 
+
 /*********************************************************************/
 /****************************ADMIN PAGE***************************/
 /*******************************************************************/
-section#admindashboard{
+
+
+/********ADMIN NAVIGATION********/
+section.admindashboard{
 	display: flex;
 	justify-content: space-between;
+	flex-direction: column;
+	overflow-x: auto;
 }
 
 /*#adminsidebar, #adminbody {
 	border: 2px solid #00803e;
 	padding: 10px;
 }*/
+.adminsidebar, .adminbody {
+	min-width: 580px;
+}
 
-#adminsidebar {
-	width: 20%;
+.adminsidebar {
+	width: 100%;
 	display: flex;
-	flex-direction: column;
+	justify-content: space-around;
+
 }
 
-#adminbody {
-	width: 77%;
+
+/********PRODUCTS-ADMIN********/
+.adminbody {
+	width: 100%;
 }
 
-#adminsidebar a {
+.adminsidebar a {
 	text-decoration: none;
 	margin-bottom: 10px;
 	border: 1px solid #00803e;
@@ -360,7 +372,7 @@ section#admindashboard{
 	color: #00803e;
 }
 
-#adminsidebar a:hover {
+.adminsidebar a:hover {
 	background-color: #dff9fb;
 	color: #6ab04c;
 }
@@ -375,9 +387,37 @@ section#admindashboard{
     padding: 8px;
 }
 
-#allproducts tr:nth-child(even){
-	background-color: #00803e;
+#allproducts th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
 }
+
+
+/********ADD NEW PRODUCT -ADMIN********/
+.adminbody h4 {
+	text-align: center;
+}
+
+.adminbody input[type=date]{
+	height: 43px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    background-color: #fff;
+    margin-top: 15px;
+}
+
 /*********************************************************************/
 /******************************Footer********************************/
 /*******************************************************************/
@@ -476,12 +516,17 @@ div.copyrightinfo {
 		width: 60%;
 	}
 
+	.admindashboard.generalfeatures {
+		margin-right: 5%;
+	}
+
 } 
 
 @media screen and (max-width: 776px) and (min-width: 547px) {
    div.featuredproduct {
 		width: 46%;
 	}
+	
 }
 
 @media screen and (max-width: 772px) and (min-width: 541px) {
