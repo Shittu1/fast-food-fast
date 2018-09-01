@@ -342,10 +342,6 @@ section.admindashboard{
 	overflow-x: auto;
 }
 
-/*#adminsidebar, #adminbody {
-	border: 2px solid #00803e;
-	padding: 10px;
-}*/
 .adminsidebar, .adminbody {
 	min-width: 580px;
 }
@@ -355,12 +351,6 @@ section.admindashboard{
 	display: flex;
 	justify-content: space-around;
 
-}
-
-
-/********PRODUCTS-ADMIN********/
-.adminbody {
-	width: 100%;
 }
 
 .adminsidebar a {
@@ -377,9 +367,15 @@ section.admindashboard{
 	color: #6ab04c;
 }
 
+/********PRODUCTS-ADMIN********/
+.adminbody {
+	width: 100%;
+}
+
 #allproducts {
 	border-collapse: collapse;
     width: 100%;
+    font-size: 16px;
 }
 
 #allproducts td, #allproducts th {
@@ -396,7 +392,7 @@ section.admindashboard{
 }
 
 
-/********ADD NEW PRODUCT -ADMIN********/
+/********ADD NEW PRODUCT-ADMIN********/
 .adminbody h4 {
 	text-align: center;
 }
@@ -417,6 +413,39 @@ input[type="file"] {
     background-color: #fff;
     margin-top: 15px;
 }
+
+/********ORDERS-ADMIN********/
+#allorders {
+	border-collapse: collapse;
+    width: 100%;
+    font-size: 16px;
+}
+
+#allorders td, #allorders th {
+    border: 1px solid #00803e;
+    padding: 8px;
+}
+
+#allorders th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+/*#drivers, #delivery {
+	margin: 0 auto;
+}*/
+
+
+/********CHANGE-PASSWORD-ADMIN********/
+.signinform input[type=password] {
+	height: 42px;
+}
+
+
+
 
 /*********************************************************************/
 /******************************Footer********************************/

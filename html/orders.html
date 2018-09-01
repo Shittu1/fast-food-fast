@@ -61,30 +61,54 @@
 			<a href="changepassword.html">Change Password</a>
 		</div>
 		<div class="adminbody">
-			<h4>ADD PRODUCT</h4>
-			<form class="signinform" action="">
-				<label class="" for="product">Name of Product</label>
-				<input class="" type="text">
-				<br/>
-				<label class="" for="details">Details</label>
-				<input class="" type="text">
-				<br/>
-				<label class="" for="price">Price</label>
-				<input class="" type="text">
-				<br/>
-				<label class="" for="date">Date</label>
-				<input class="" type="date">
-				<br/>
-				<label for="file-upload" class="custom-file-upload">
-    Upload Picture
-</label>
-				<input id="file-upload" type="file"/>
-				<input class="" type="submit" value="Add Product">
+			
+			<table id="allorders">
+				<thead>
+					<tr>
+						<th>Order Date</th>
+						<th>Customer</th>
+						<th>Address</th>
+						<th>Product</th>
+						<th>Order No</th>
+						<th>Price</th>
+						<th>Payment Status</th>
+						<th>Assign Driver</th>
+						<th>Delivery Status</th>
+						<th>Delete</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>12/6/2018</td>
+						<td>Adams Shittu</td>
+						<td>Ikorodu Lagos</td>
+						<td>Pizza</td>
+						<td>102031</td>
+						<td>$60</i></td>
+						<td>Pay on delivery</td>
+						<td>
+							<select id="drivers">
+							  <option value="Drivers">Drivers:</option>
+							  <option value="James">James</option>
+							  <option value="Chinonso">Chinonso</option>
+							  <option value="Idris">Idris</option>
+							</select>
+						</td>
+						<td>
+							<select id="delivery">
+							  <option value="In-Transit">In Transit</option>
+							  <option value="Deliverd">Delivered</option>
+							</select>
+						</td>
+						<td><a href=""><i class="far fa-trash-alt"></i></a></td>
+					</tr>
+				</tbody>
+		
+			</table>
 
-				<br>
-				<br>
-			</form>
 		</div>
+		
+		<br>
 	</section>
 
 	
@@ -92,7 +116,8 @@
 	<br/>
 	
 
-
+	<br/>
+	<br/>
 
 	<br />
 	<br />
