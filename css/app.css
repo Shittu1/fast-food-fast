@@ -175,13 +175,13 @@ article#featurescontainer {
 }
 
 div.featuredproduct {
-	padding: 20px;
+	padding: 10px;
 	background: #fff;
 	width: 22%;
 }
 
 img.featureimage {
-	width: 98%;
+	width: 100%;
 }
 
 div.priceandcart {
@@ -478,16 +478,16 @@ div.copyrightinfo {
 
 } 
 
+@media screen and (max-width: 776px) and (min-width: 547px) {
+   div.featuredproduct {
+		width: 46%;
+	}
+}
+
 @media screen and (max-width: 772px) and (min-width: 541px) {
   div.cartsignin {
 	margin: 0 auto;
   }
-}
-
-@media screen and (max-width: 643px) and (min-width: 547px) {
-  div.featuredproduct {
-		width: 46%;
-	}
 }
 
 @media only screen and (max-width: 541px) {
