@@ -1,3 +1,6 @@
+
+
+//For Rendering the Admin Dashboard
 let loginpassword = document.querySelector("#loginpassword");
 let loginbutton = document.querySelector("#loginbutton");
 
@@ -6,3 +9,5 @@ loginbutton.addEventListener("click", function(){
 		window.open("admin.html");
 	}
 });
+
+
