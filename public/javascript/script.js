@@ -6,7 +6,7 @@ let loginbutton = document.querySelector("#loginbutton");
 
 loginbutton.addEventListener("click", function(){
 	if(loginpassword.value === "admin"){
-		window.open("admin.html");
+		window.open("/products");
 	}
 });
 

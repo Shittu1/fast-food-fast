@@ -1,0 +1,71 @@
+<% include partials/header %>
+<% include partials/admintitle %>
+	
+
+	<!-----------Admin Area---------->
+	
+	<section class="admindashboard generalfeatures">
+
+		<% include partials/adminnavbar %>
+		
+		<div class="adminbody">
+			
+			<table id="allorders">
+				<thead>
+					<tr>
+						<th>Order Date</th>
+						<th>Customer</th>
+						<th>Address</th>
+						<th>Product</th>
+						<th>Order No</th>
+						<th>Price</th>
+						<th>Payment Status</th>
+						<th>Assign Driver</th>
+						<th>Delivery Status</th>
+						<th>Delete</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>12/6/2018</td>
+						<td>Adams Shittu</td>
+						<td>Ikorodu Lagos</td>
+						<td>Pizza</td>
+						<td>102031</td>
+						<td>$60</i></td>
+						<td>Pay on delivery</td>
+						<td>
+							<select id="drivers">
+							  <option value="Drivers">Drivers:</option>
+							  <option value="James">James</option>
+							  <option value="Chinonso">Chinonso</option>
+							  <option value="Idris">Idris</option>
+							</select>
+						</td>
+						<td>
+							<select id="delivery">
+							  <option value="In-Transit">In Transit</option>
+							  <option value="Deliverd">Delivered</option>
+							</select>
+						</td>
+						<td><a href=""><i class="far fa-trash-alt"></i></a></td>
+					</tr>
+				</tbody>
+		
+			</table>
+
+		</div>
+		
+		<br>
+	</section>
+
+	
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br />
+	<br />
+
+
+<% include partials/footer %>
