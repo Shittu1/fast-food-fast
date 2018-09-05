@@ -4,7 +4,6 @@ html, body {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
-    /*min-width: 320px;*/
 }
 
 body {
@@ -167,14 +166,79 @@ a.navbarcontent:hover {
 /*********************************************************************/
 /************************Cover image Section*************************/
 /*******************************************************************/
-img#coverimage {
-	height: 85vh;
-	width: 100%;
+
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
 }
 
+body { margin: 0; } 
+div#slider { overflow: hidden; }
+div#slider figure img { width: 20%; float: left; height: 500px; }
+div#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite; 
+}
+
+
 /*********************************************************************/
-/************************Featured Product**************************/
+/************************Features  - Products**************************/
 /*******************************************************************/
+
+img {
+	max-width: 100%; 
+	display: block;
+	height: 250px;
+}
+    
+h3, h5 {
+	color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 8px;
+}
+.listing {
+  padding: 0px;
+  list-style: none;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
+}
+.listing li {
+  background-color: #ff8300;
+  border: 1px solid #ffe066;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.listing .addtocart {
+  background-color: #00803e;
+  margin-top: auto;
+  border-top: 1px solid #ffe066;
+  padding: 10px;
+  text-align: center;
+}
+
+.listing .addtocart a {
+	text-decoration: none;
+	color: #ff8300;
+}
+
+.listing .addtocart a:hover {
+	color: #fff;
+}
 
 h3#featureheading {
 	background: #00803e;
@@ -184,55 +248,9 @@ h3#featureheading {
 	width: 100vw;
 }
 
-article#featurescontainer {
-	display: flex;
-	justify-content: space-between;
-}
-
-div.featuredproduct {
-	padding: 10px;
-	background: #fff;
-	width: 22%;
-}
-
-img.featureimage {
-	width: 100%;
-}
-
-div.priceandcart {
-	display: flex;
-	justify-content: space-between;
-	background: #ff8300;
-	height: auto;
-}
-
-p.featuredescription {
-	font-size: 16px;
-	padding-top: 0;
-	margin-top: 5px;
-}
-
-span.price {
-	padding-top: 2px;
-	margin-left: 8px;
-	color: #00803e;
-}
-
-span.price, a.addtocart {
-	margin-top: 15px;
-	margin-bottom: 15px;
-} 
-
-a.addtocart, a#seemorefeatures {
+a#seemorefeatures {
 	text-decoration: none;
 	color: #fff;
-}
-a.addtocart {
-	margin-right: 8px;
-}
-
-a.addtocart:hover {
-	color: #00803e;
 }
 
 div#featuresbutton {
@@ -250,7 +268,7 @@ a#seemorefeatures {
 a#seemorefeatures:hover {
 	color: #ff8300;
 }
-
+/************************End of Features  - Products**************************/
 
 
 /*********************************************************************/
@@ -520,16 +538,9 @@ div.copyrightinfo {
 
 
 
-
-
-@media only screen and (max-width: 920px) {
-	div.priceandcart {
-		flex-direction: column;
-		text-align: center;
-		padding: 5px 0;
-	}
-}
-
+/*********************************************************************/
+/******************************MEDIA QUERIES********************************/
+/*******************************************************************/
 
 @media only screen and (max-width: 772px) {
 	div.hearderparts {
@@ -545,28 +556,6 @@ div.copyrightinfo {
 		padding: 0 0 0 25px;
 	}
 
-	article#featurescontainer {
-		flex-wrap: wrap;
-	}
-
-	div.featuredproduct {
-		width: 180px;
-		margin-bottom: 20px;
-	}
-
-	div.eachfeatures, p.featuredescription {
-		font-size: 18px;
-	}
-
-	span.price, a.addtocart {
-		margin: 0;
-
-	} 
-	
-	div#featuresbutton, a#seemorefeatures {
-		margin: 0;
-	} 
-
 	div#signup {
 		max-width: 70%;
 	}
@@ -580,13 +569,7 @@ div.copyrightinfo {
 	}
 
 } 
-
-@media screen and (max-width: 776px) and (min-width: 547px) {
-   div.featuredproduct {
-		width: 46%;
-	}
-	
-}
+   
 
 @media screen and (max-width: 772px) and (min-width: 541px) {
   div.cartsignin {
@@ -595,6 +578,8 @@ div.copyrightinfo {
 }
 
 @media only screen and (max-width: 541px) {
+	div#slider figure img { height: 350px; }
+
 	.search {
 		margin-top: 15px;
 	}
@@ -616,20 +601,6 @@ div.copyrightinfo {
 		width: 100%;
 	}
 
-	.bottom-left {
-    	display: none;
-	}
-
-	article#featurescontainer {
-		justify-content: space-around;
-	}
-
-	div.featuredproduct {
-		padding: 10px;
-		background: #fff;
-		width: 45%;
-	}
-
 	form.signinform {
 		width: 80%;
 	}
@@ -648,10 +619,6 @@ div.copyrightinfo {
 
 	.bottom-left {
     	display: none;
-	}
-
-	div.eachfeatures, p.featuredescription {
-		font-size: 14px;
 	}
 
 	div.contact {
