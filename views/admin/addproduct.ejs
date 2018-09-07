@@ -10,24 +10,34 @@
 		
 		<div class="adminbody">
 			<h4>ADD PRODUCT</h4>
-			<form class="signinform" action="">
-				<label class="" for="product">Name of Product</label>
-				<input class="" type="text">
+
+	<!------enctype='multipart/form-data'----->
+
+			<%= typeof msg != "undefined" ? msg : '' %>
+
+			<form class="signinform" action="/delicacies" method="POST">
+				<label for="name">Name of Product*</label>
+				<input type="text" name="name"/>
 				<br/>
-				<label class="" for="details">Details</label>
-				<input class="" type="text">
+				<label for="price">Price*</label>
+				<input type="text" name="price"/>
 				<br/>
-				<label class="" for="price">Price</label>
-				<input class="" type="text">
+				<label for="date">Date*</label>
+				<input type="date" name="date"/>
 				<br/>
-				<label class="" for="date">Date</label>
-				<input class="" type="date">
+			<!-----------This ia temporary till I find a solution to the upload image---------->
+				<label for="image">Image Url*</label>
+				<input type="text" name="image"/>
+
+		<!----	<label for="file-upload" class="custom-file-upload">Upload Picture</label>
+				<input id="file-upload" name="productImage" type="file"/>  ---->
+
+
 				<br/>
-				<label for="file-upload" class="custom-file-upload">
-    Upload Picture
-</label>
-				<input id="file-upload" type="file"/>
-				<input class="" type="submit" value="Add Product">
+				<label for="alt">Image Description*</label>
+				<input type="text" name="alt"/>
+
+				<input type="submit" value="Add Product">
 
 				<br>
 				<br>
