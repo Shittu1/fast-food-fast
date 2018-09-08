@@ -13,35 +13,28 @@
 					<tr>
 						<th></th>
 						<th>Product</th>
-						<th>Details</th>
 						<th>Price</th>
 						<th>Date</th>
 						<th>Edit</th>
 						<th>Delete</th>
 					</tr>
 				</thead>
+
+		<% delicacies.forEach((delicacy) => { %>		
+
 				<tbody>
 					<tr>
 						<td><input type="checkbox"></td>
-						<td>Product name</td>
-						<td>Piza</td>
-						<td>$60</td>
-						<td>31/08/2018</td>
+						<td><%= delicacy["name"] %></td>
+						<td><%= delicacy["price"] %></td>
+						<td><%= delicacy["date"] %></td>
 						<td><a href=""><i class="far fa-edit"></i></a></td>
 						<td><a href=""><i class="far fa-trash-alt"></i></a></td>
 					</tr>
 				</tbody>
-				<tbody>
-					<tr>
-						<td><input type="checkbox"></td>
-						<td>Product name</td>
-						<td>Piza</td>
-						<td>$60</td>
-						<td>31/08/2018</td>
-						<td><a href=""><i class="far fa-edit"></i></a></td>
-						<td><a href=""><i class="far fa-trash-alt"></i></a></td>
-					</tr>
-				</tbody>
+		<% }); %>
+
+				
 			</table>
 		</div>
 		<br>

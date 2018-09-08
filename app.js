@@ -97,12 +97,17 @@ app.get("/changepassword", (req, res) => res.render("changepassword"));
 
 app.get("/addproduct", (req, res) => res.render("addproduct"));
 
-app.get("/products", (req, res) => res.render("products"));
+app.get("/products", (req, res) => res.render("products", {delicacies: delicacies}));
 
+
+ // let checkbox = document.querySelector('input[type=checkbox')
+	// checkbox.addEventListener('click', (event) => {
+	// 	if()
+	// });
 
 
 app.get("/delicacies", (req, res) => {
-	res.render("delicacies", {delicacies: delicacies})
+	res.render("delicacies", {delicacies: delicacies});
 });
 
 app.post("/delicacies", urlencodedParser, (req, res) => {
@@ -111,7 +116,8 @@ app.post("/delicacies", urlencodedParser, (req, res) => {
 	let alt = req.body.alt;
 	let price = req.body.price;
 	let date = req.body.date;
-	let newDelicacies = {name: name, image: image, alt: alt, price: price, date: date};
+	let details = req.body.details;
+	let newDelicacies = {name: name, image: image, alt: alt, price: price, date: date, details: details};
 	delicacies.push(newDelicacies);
 	//redirect back to delicacies page
 	res.redirect("/products");
