@@ -1,0 +1,38 @@
+<% include partials/header %>
+
+<main class="contactcontainer">
+<p>Contact Us!</p>
+
+        <form class="addPage" action="" method="post">
+        
+            <div class="textDiv">
+                <label class="addPageLabel" for="firstname">First Name</label>
+                <input class="addPageText" type="text" name="first-name" placeholder="Your name..">
+            </div>
+            <div class="textDiv">
+                <label class="addPageLabel" for="last-name">Last Name</label>
+                <input class="addPageText" type="text" name="last-name" placeholder="Your last name..">
+            </div>
+             <div class="textDiv">
+                <label class="addPageLabel" for="email">Email</label>
+                <input class="addPageText" type="email" name="email" placeholder="Your email..">
+            </div>
+             <div class="textDiv">
+                <label class="addPageLabel" for="country">Country</label>
+                <input class="addPageText" type="country" name="country" placeholder="Your country..">
+            </div>
+            <div class="textAreaDiv">
+                <label class="addPageLabel" for="subject">Subject</label>
+                <textarea class="textAreaContent" name="subject" placeholder="Write something.."></textarea>
+            </div>
+            
+            <br/>
+            <button class="btnAddPage" type="submit">Submit</button>
+        
+        </form>
+</main>
+<br/>
+
+
+<% include partials/footer %>
+        

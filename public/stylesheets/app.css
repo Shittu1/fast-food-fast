@@ -9,7 +9,6 @@ html, body {
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 21px;
-  background: #ff8300;
 }
 
 
@@ -22,131 +21,78 @@ body {
 	padding: 0 40px;
 }
 
-div.header {
-	padding-top: 10px;
+main.contactcontainer {
+    padding: 0 40%;
 }
 
-.contact {
-	font-size: 15px;
-	margin-left: 10px;
-	margin-bottom: 20px;
-	color: #485460;
+
+
+header { 
+    text-align: left;
+    width: 100vw;
 }
 
-div.hearderparts {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+header div i {
+    padding-left: 13px;
+    font-size: 30px;
 }
 
-div.brand {
-	width: 35%;
-	min-width: 300px;
-	display: flex;
+header div h1 {
+    padding: 0 0 0 30px;
+    margin: 0;
+    font-size: 30px;
 }
 
-.search {
-	width: 35%;
-	display: flex;
+header div {
+    display: flex;
+    align-items: center;
+    height: 55px;
 }
 
-.cartsignin {
-	width: 15%;
-	min-width: 150px;
-	display: flex;
-	justify-content: space-between;
+header div, nav {
+    background: #00803e;
 }
 
-i.fas.fa-utensils {
-	font-size: 50px;
-	margin-right: 10px;
-	padding-top: 5px;
-	color: #fff;
+header h1, nav li a, header div i {
+    color: #f7f1e3;
 }
 
-h1.brandname {
-	margin: 0 0 0 10px;
-	font-size: 30px;
-	text-align: center;
-	padding-top: 13px;
-	color: #00803e;
+nav {
+    position: absolute;
+    display: none; 
+    width: 150px;
+    z-index: 2;
 }
 
-input[type=text], button.searchicon {
-	height: 40px;
-	font-size: 25px;
+nav ul li {
+    list-style: none;
+    padding: 13px;
 }
 
-.search input[type=text] {
-	width: 80%;
-	min-width: 100px;
-	padding-left: 10px;
+nav ul {
+    padding: 0;
+    margin: 0;
 }
 
-.search button.searchicon {
-	width: 20%;
-	min-width: 50px;
+nav li a {
+    text-decoration: none;
+    font-size: 14px;
 }
 
-i.fas.fa-shopping-cart, span.signin {
-	text-align: center;
-	padding-top: 3px;
-	font-size: 25px;
-	height: 40px;
+nav li a:hover {
+    color: black;
 }
 
-i.fas.fa-shopping-cart{
-	width: 40%;
-	color: #fff;
-	padding-top: 5px;
+.navhr {
+    margin: 0;
 }
 
-i.fas.fa-shopping-cart:hover {
-	font-size: 23px;
-}
 
-span.signin {
-	width: 60%;
-	font-size: 20px;
-	margin-top: 6px;	
-}
+main.container {
+    padding: 0 30px;
+} 
 
-span.signin a, div.contact a {
-	text-decoration: none;
-	color: #00803e;
-}
 
-span.signin a:hover {
-	color: #fff;
-}
-
-div.contact a:hover {
-	color: #fff;
-}
-
-/*********************************************************************/
-/***************************Navigation Bar***************************/
-/*******************************************************************/
-
-#navbar {
-	justify-content: space-around;
-	background: #00803e;
-	height: 50px;
-	width: 100vw;
-}
-
-.navbarcontent {
-	color: #fff;
-	text-decoration: none;
-}
-
-a.navbarcontent:hover {
-	color: #ff8300; 
-}
-
-.user {
-	color: #fbc531;
-}
 /*******User Dropdown********/
 
 .navbarcontent {
@@ -154,9 +100,10 @@ a.navbarcontent:hover {
     display: inline-block;
 }
 .dropdown-content {
+    height: auto;
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #00803e;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 16px;
@@ -167,12 +114,82 @@ a.navbarcontent:hover {
    text-decoration: none;
 }
 
-.dropdown-content a:hover {
+.dropdown-content a:hover, .user:hover {
    color: #eb3b5a;
 }
 .navbarcontent:hover .dropdown-content {
     display: block;
 }
+
+.atags {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.firsttwo {
+    margin: 5px 0;
+}
+
+/*******User Dropdown Ends********/
+
+
+
+/*******CONTACT NAV MENU********/
+
+.btnAddPage{
+    text-decoration: none;
+    color: #fff;
+    background: #00803e;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 5px;
+}
+.btnAddPage:hover{
+    color: #00803e;
+    background: #fff;
+}
+
+form.addPage {
+    width: 100%;
+    height: auto;
+}
+
+.textDiv, .textAreaDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.addPageLabel {
+    margin: 15px 0 5px 0;
+}
+
+.addPageText, .textAreaContent {
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+
+.addPageText:hover, .textAreaContent:hover {
+    border: 1px solid rgb(194, 221, 158);
+}
+
+.addPageText {
+    height: 30px; 
+}
+
+.textAreaContent {
+    height: 200px;
+    padding-top: 8px;
+}
+
+main.contactcontainer {
+    padding: 0 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
 
 /*********************************************************************/
 /************************Cover image Section*************************/
@@ -192,7 +209,7 @@ a.navbarcontent:hover {
 
 body { margin: 0; } 
 div#slider { overflow: hidden; }
-div#slider figure img { width: 20%; float: left; height: 500px; }
+div#slider figure img { width: 20%; float: left; height: 400px; }
 div#slider figure { 
   position: relative;
   width: 500%;
@@ -257,6 +274,7 @@ h3#featureheading {
 	padding-top: 10px;
 	color: #fff;
 	width: 100vw;
+    text-align: left;
 }
 
 a#seemorefeatures {
@@ -289,8 +307,6 @@ a#seemorefeatures:hover {
 div#signup {
 	max-width: 35%;
 	padding: 2%;
-	border: 4px dashed #00803e;
-	border-radius: 10px;
 	margin: 0 auto;
 }
 
@@ -301,14 +317,16 @@ div#signup h1 {
 }
 
 .signupinput, 
-.all {					/***Sign-up form***/
+.all {					/***Sign-up and Log-in form***/
 	width: 100%;
 }
 
-.signupinput {
+.signupinput, .all {    /***Sign-up and Log-in form***/
 	padding: 5px;
-	margin-bottom: 10px;
-	height: 30px;
+	margin-bottom: 20px;
+	height: 33px;
+    border-radius: 5px;
+    border: 1px solid grey;
 }
 
 div#signup input[type=submit] {
@@ -319,14 +337,30 @@ div#signup input[type=submit] {
 }
 
 div#signup input[type=submit]:hover,
-form.signinform input[type=submit]:hover {  /***Sign-up form***/
-	color: #00803e;
-	background-color: #fff;
+.signupinput input[type=submit]:hover,
+.signupinput {  /***Sign-up form***/
+	border: 1px solid #00803e;
+}
+
+.logininfo {
+    font-size: 14px;
+    font-style: italic;
+}
+
+.logininstead {
+    border: 1px solid #00803e;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.logininstead:hover {
+    color: #00803e;
 }
 
 
 /*********************************************************************/
-/******************************SIGN-IN FORM**************************/
+/******************************LOG-IN/SIGN-IN FORM**************************/
 /*******************************************************************/
 section.signinformcontainer.generalfeatures h4 {
 	text-align: center;
@@ -348,8 +382,8 @@ form.signinform {
 
 form.signinform input[type=submit] {
 	border: none;
-	margin-top: 40px;
-	height: 43px;
+	margin-top: 20px;
+	height: 40px;
 	background-color: #00803e;
 	color: #fff;
 	font-size: 20px
@@ -425,6 +459,11 @@ section.admindashboard{
 }
 
 /********PRODUCTS-ADMIN********/
+#addproductform {
+    display: flex;
+    flex-direction: column;
+}
+
 .adminbody {
 	width: 100%;
 }
@@ -458,18 +497,32 @@ section.admindashboard{
 	height: 43px;
 }
 
-input[type="file"] {
-    display: none;
+#addproductform {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
-.custom-file-upload {
-    border: 1px solid #ccc;
-    display: inline-block;
-    padding: 6px 12px;
-    cursor: pointer;
-    background-color: #fff;
-    margin-top: 15px;
+.addproductbutton, .addproductinput {
+     border-radius: 5px;
 }
+
+.addproductinput {
+    height: 40px;
+    border: 1px solid grey;
+}
+
+.addproductinput:hover {
+    border: 1px solid #44bd32;
+}
+
+.addproductbutton {
+    margin-top: 10px;
+    padding-top: 10px;
+    max-width: 150px;
+}
+
 
 /********ORDERS-ADMIN********/
 #allorders {
@@ -491,10 +544,6 @@ input[type="file"] {
     color: white;
 }
 
-/*#drivers, #delivery {
-	margin: 0 auto;
-}*/
-
 
 /********CHANGE-PASSWORD-ADMIN********/
 .signinform input[type=password] {
@@ -508,38 +557,18 @@ input[type="file"] {
 /******************************Footer********************************/
 /*******************************************************************/
 
-div.socialmediaicons, div.copyrightinfo {
+div.copyrightinfo {
 	width: 100vw;
-}
-
-div.socialmediaicons {
-	height: 18vh;
-	background: rgba(255,67,0, 0.5);
 }
 
 div.copyrightinfo {
 	height: 50px;
-	background: rgba(255,67, 0, 0.8);
 }
 
-div.socialmediaicons, div.copyrightinfo {
+div.copyrightinfo {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-
-}
-
-div.socialmediaicons {
-	font-size: 40px;
-	padding: 0 40%;
-}
-
-i.fab.fa-facebook,
-i.fab.fa-twitter-square,
-i.fab.fa-instagram,
-i.fab.fa-google-plus-square {
-	padding: 0 5px;
-	color: #00803e;
 }
 
 div.copyrightinfo {
@@ -547,25 +576,74 @@ div.copyrightinfo {
 	color: #fff;
 }
 
+.year, .far.fa-copyright {
+    color: #00803e;
+}
 
 
 /*********************************************************************/
 /******************************MEDIA QUERIES********************************/
 /*******************************************************************/
 
-@media only screen and (max-width: 772px) {
-	div.hearderparts {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		flex-wrap: wrap;
-	}
+/*****Header/Nav Bar******/
+@media screen and (min-width: 823px){
 
-	div.cartsignin {
-		display: flex;
-		margin-top: 15px;
-		padding: 0 0 0 25px;
-	}
+    .dropdown-content {
+        right: 0;
+        width: auto;
+    }
+
+    .atags {
+        width: auto;
+        height: auto;
+    }
+
+    header { 
+        display: flex;
+        background: #00803e;
+    }
+    
+    header div { 
+        width: 370px;
+    }
+    
+    .fas.fa-bars {
+        display: none;
+    }
+    
+    nav {
+        display: unset !important;
+        position: unset !important;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    nav ul {
+        display: flex;
+         margin-top: 5px;
+        margin-right: 20px;
+        justify-content: space-around;
+        margin: 0;
+    }
+    
+    .navhr {
+        display: none;
+    }
+    
+    nav ul li{
+        margin-top: 2px; 
+    }
+
+     nav ul li a {
+        font-size: 14px;
+     }
+    
+}
+
+
+
+@media only screen and (max-width: 772px) {
 
 	div#signup {
 		max-width: 70%;
@@ -582,30 +660,8 @@ div.copyrightinfo {
 } 
    
 
-@media screen and (max-width: 772px) and (min-width: 541px) {
-  div.cartsignin {
-	margin: 0 auto;
-  }
-}
-
 @media only screen and (max-width: 541px) {
 	div#slider figure img { height: 350px; }
-
-	.search {
-		margin-top: 15px;
-	}
-
-	#navbar {
-		flex-direction: column;
-		background: #00803e;
-		height: 60px;
-		width: 100vw;
-	}
-
-	div.brand {
-		justify-content: space-around;
-		margin: 0 auto;
-	}
 
 	form.signinform {
 		width: 80%;
@@ -618,19 +674,6 @@ div.copyrightinfo {
 		padding: 0 10px;
 	}
 
-	.bottom-left {
-    	display: none;
-	}
-
-	div.contact {
-		display: flex;
-		flex-direction: column;
-	}
-
-	span.separator {
-		display: none;
-	}
-
 	div#signup, div#aboutcontainer {
 		max-width: 90%;
 	}
@@ -638,37 +681,17 @@ div.copyrightinfo {
 } 
 
 @media only screen and (max-width: 320px) {
-	i.fas.fa-utensils {
-		display: none;
-	}
-
-	div.hearderparts {
-		flex-direction: column;
-	}
 
 	body {
 		font-size: 18px;
 	}
-
-	h1.brandname, div.hearderparts.generalfeatures {
-		padding: 0;
-		margin: 0;
-		width: auto;
-	}
-	h1.brandname {
-		font-size: 25px;
-		margin-left: -32px;
-	}
-	.search {
-		width: 200px;
-	} 
-	div.cartsignin {
-		margin-left: -15px;
-	}
 	
-
 	form.signinform, div#aboutcontainer{
 		width: 95%;
 	}
+
+    header div h1 {
+        font-size: 25px;
+    }
 
 }

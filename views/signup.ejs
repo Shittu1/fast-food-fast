@@ -1,22 +1,27 @@
 <% include partials/header %>
 
+
+	<br />
 <section class="generalfeatures">
 		<div id="signup">
 			<h1>Create a New Customer Account</h1>
-			<hr />
+			<br />
 			<form action="#">
-				<input class="signupinput" type="text" placeholder="First Name">
-				<input class="signupinput" type="text" placeholder="Last Name">
-				<input class="signupinput" type="number" placeholder="Phone">
-				<input class="signupinput" type="text" placeholder="Your Email">
-				<input class="signupinput" type="text" placeholder="Re-enter Email">
+				<input class="signupinput" name="firstname" type="text" placeholder="First Name">
+				<input class="signupinput" name="secondname" type="text" placeholder="Last Name">
+				<input class="signupinput" name="phone" type="number" placeholder="Phone">
+				<input class="signupinput" name="email" type="text" placeholder="Your Email">
 				<input class="signupinput" type="password" placeholder="Password">
 				<input class="signupinput" type="submit" placeholder="Submit">
 			</form>
+			<p class="logininfo">Log in if you have an account already.</p>
+			<a class="logininstead" href="/login">Log In</a>
 		</div>
 	</section>
 	
 	<br />
+	<br />
+	
 
 
 <% include partials/footer %>

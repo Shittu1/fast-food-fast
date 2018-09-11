@@ -15,29 +15,24 @@
 
 			<%= typeof msg != "undefined" ? msg : '' %>
 
-			<form class="signinform" action="/delicacies" method="POST">
+			<form id="addproductform" action="/delicacies" method="POST">
 				<label for="name">Name of Product*</label>
-				<input type="text" name="name"/>
+				<input class="addproductinput" type="text" name="name"/>
 				<br/>
 				<label for="price">Price*</label>
-				<input type="text" name="price"/>
+				<input class="addproductinput" type="text" name="price"/>
 				<br/>
 				<label for="date">Date*</label>
-				<input type="date" name="date"/>
+				<input class="addproductinput" type="date" name="date"/>
 				<br/>
-			<!-----------This ia temporary till I find a solution to the upload image---------->
-				<label for="image">Image Url*</label>
-				<input type="text" name="image"/>
-
-		<!----	<label for="file-upload" class="custom-file-upload">Upload Picture</label>
-				<input id="file-upload" name="productImage" type="file"/>  ---->
-
-
+				<label for="image">Image*</label>
+				<input class="addproductinput" type="text" name="image"/>
 				<br/>
 				<label for="alt">Image Description*</label>
-				<input type="text" name="alt"/>
+				<input class="addproductinput" type="text" name="alt"/>
+				<br/>
 
-				<input type="submit" value="Add Product">
+				<input class="addproductbutton" type="submit" value="Add Product">
 
 				<br>
 				<br>
