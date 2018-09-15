@@ -8,7 +8,7 @@
 
 		<% include partials/adminnavbar %>
 		
-		<div class="adminbody">
+		<div id="addproductdiv">
 			<h4>ADD PRODUCT</h4>
 
 	<!------enctype='multipart/form-data'----->
@@ -17,19 +17,19 @@
 
 			<form id="addproductform" action="/delicacies" method="POST">
 				<label for="name">Name of Product*</label>
-				<input class="addproductinput" type="text" name="name"/>
+				<input class="addproductinput" type="text" name="name" placeholder="Product Name"/>
 				<br/>
 				<label for="price">Price*</label>
-				<input class="addproductinput" type="text" name="price"/>
+				<input class="addproductinput" type="text" name="price" placeholder="Price"/>
 				<br/>
 				<label for="date">Date*</label>
 				<input class="addproductinput" type="date" name="date"/>
 				<br/>
-				<label for="image">Image*</label>
-				<input class="addproductinput" type="text" name="image"/>
+				<label for="image">Image URL*</label>
+				<input class="addproductinput" type="text" name="image" placeholder="Image URL"/>
 				<br/>
 				<label for="alt">Image Description*</label>
-				<input class="addproductinput" type="text" name="alt"/>
+				<input class="addproductinput" type="text" name="alt" placeholder="Image Description"/>
 				<br/>
 
 				<input class="addproductbutton" type="submit" value="Add Product">

@@ -21,7 +21,7 @@
 						<th>Price</th>
 						<th>Payment Status</th>
 						<th>Assign Driver</th>
-						<th>Delivery Status</th>
+						<th>Order Status</th>
 						<th>Delete</th>
 					</tr>
 				</thead>
@@ -43,12 +43,14 @@
 							</select>
 						</td>
 						<td>
-							<select id="delivery">
+							<select id="orderstatus">
+							  <option value="In-Transit">Accept</option>
+							  <option value="In-Transit">Decline</option>
 							  <option value="In-Transit">In Transit</option>
-							  <option value="Deliverd">Delivered</option>
+							  <option value="Delivered">Delivered</option>
 							</select>
 						</td>
-						<td><a href=""><i class="far fa-trash-alt"></i></a></td>
+						<td class="deleteorder"><input type="checkbox"><a href=""><i class="far fa-trash-alt"></i></a></td>
 					</tr>
 				</tbody>
 		

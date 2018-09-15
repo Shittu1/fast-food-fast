@@ -87,13 +87,19 @@ nav li a:hover {
     margin: 0;
 }
 
+span.cartcount {
+    display: none;
+}
+
+/*******HEADER/NAV LINKS ENDS HERE********/
+
 
 main.container {
     padding: 0 30px;
 } 
 
 
-/*******User Dropdown********/
+/*******User Dropdown Starts********/
 
 .navbarcontent {
     position: relative;
@@ -497,11 +503,15 @@ section.admindashboard{
 	height: 43px;
 }
 
+#addproductdiv {
+    margin: 0 auto;
+    width: 700px;
+}
+
 #addproductform {
     display: flex;
     flex-direction: column;
-    max-width: 700px;
-    margin: 0 auto;
+    width: 100%;
 }
 
 .addproductbutton, .addproductinput {
@@ -511,6 +521,8 @@ section.admindashboard{
 .addproductinput {
     height: 40px;
     border: 1px solid grey;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .addproductinput:hover {
@@ -519,8 +531,14 @@ section.admindashboard{
 
 .addproductbutton {
     margin-top: 10px;
-    padding-top: 10px;
+    padding: 10px;
     max-width: 150px;
+    border: 1px solid grey;
+    font-size: 16px;
+}
+
+.addproductbutton:hover {
+    background-color: #44bd32;
 }
 
 
@@ -542,6 +560,12 @@ section.admindashboard{
     text-align: left;
     background-color: #4CAF50;
     color: white;
+}
+
+
+.deleteorder {
+    display: flex;
+    justify-content: space-around;
 }
 
 
