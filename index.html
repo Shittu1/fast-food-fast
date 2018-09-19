@@ -11,53 +11,44 @@
 	<link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-	
 	<!-----------Header---------->
-	<header>
-		<div class="header">
-			<div class="contact">
-				<span class="contactdetails"><i class="fas fa-phone"></i> +2347060465224</span> 
-				<span class="separator">|</span>
-				<span class="contactdetails"><i class="fas fa-envelope"></i> shttdms@gmail.com</span>
-				<span class="separator">|</span>
-				<a href="html/login.html">admin</a>
-				<span class="separator">|</span>
-				<a href="html/signup.html">sign up</a>
-			</div>
-			<div class="hearderparts generalfeatures">
-				<div class="brand">
-					<i class="fas fa-utensils"></i>
-					<h1 class="brandname">Fast Food Fast</h1>
-				</div>
-				<form action="#" class="search">
-					<input type="text" placeholder="Search...">
-					<button class="searchicon" type="submit"><i class="fas fa-search"></i></button>		
-				</form>
-				<div class="cartsignin">
-					<a href="#"><i class="fas fa-shopping-cart"></i></a>
-					<span class="signin"><a class="signin" href="html/login.html">LOGIN</a></span>
-				</div>
-			</div>
-			<br />
-			<div class="hearderparts" id="navbar">
-				<a class="navbarcontent" href="index.html">Home</a>
-				<a class="navbarcontent" href="html/about.html">About us</a>
-				<a class="navbarcontent" href="html/delicacies.html">Delicacies</a>
-				<span class="navbarcontent">Welcome 
-					<span>User</span>
-					<div class="dropdown-content">
-						<a href="#">My Account</a>
-						<a href="#">Order History</a>
-					</div>
-				</span>
-					
-			</div>
-			
+<header>
+        <div>
+            <i class="fas fa-bars"></i>
+            <h1>Fast Food Fast</h1>
+        </div>
+        <nav>
+            <ul>
+                <hr class="navhr"/>
+                <li class="left"><a href="index.html">Home</a></li>
+                <hr class="navhr"/>
+                <li class="left"><a href="html/about.html">About Us</a></li>
+                <hr class="navhr"/>
+                <li class="left"><a href="html/contact.html">Contact</a></li>
+                <hr class="navhr"/>
+                <li class="left"><a href="html/delicacies.html">Delicacies</a></li>
+                <hr class="navhr"/>
+                <li class="right">
+                    <span>
+                        <span class="mycart">My Cart</span> 
+                        <span class="bracketleft">(</span>
+                        <a class="cartcount" href="/mycart">0</a>
+                        <span class="bracketright">)</span>
+                    </span>
+                </li>
+                <hr class="navhr"/>
+                <li class="right"><a href="html/signup.html">Sign Up</a></li>
+                <hr class="navhr"/>
+                <li class="right"><a href="html/login.html">Log In</a></li>
+                <hr class="navhr"/>
+            </ul>
+        </nav>
 
-		</div>
+        
 	</header>
-	<br />
-	
+    <br />
+    <br />
+
 	<!-----------Cover Image---------->
 	<section class="generalfeatures">
 		<img id="coverimage" src="img/pexels1.jpeg" alt="Image of Burger Cheese">
@@ -66,57 +57,54 @@
 	
 	<!-----------Featured Products---------->
 	<h3 id="featureheading" class="generalfeatures">Features</h3>
-	<article id="featurescontainer" class="generalfeatures">
+	<article class="generalfeatures">
 
-		<div class="featuredproduct">
-			<div class="eachfeatures">
-				<img class="featureimage" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Chex-Mix-Pile.jpg/220px-Chex-Mix-Pile.jpg" alt="Chex Mix">
-				<p class="featuredescription">Chex Mix</p>
-				<hr />
-				<div class="priceandcart">
-					<span class="price">$10</span>
-					<a href="#" class="addtocart">Add to cart</a>
-				</div>
-			</div>
-		</div>
+		<ul class="listing">
+			<li>
+  				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Chex-Mix-Pile.jpg/220px-Chex-Mix-Pile.jpg" alt="Chex Mix Pile image">
+    			<h3>Chex Mix Pile</h3>
+    			<h5>₦10:00</h5>
+    			<div class="addtocart">
+    				<a class="addtocartbutton" href="#">Add to cart</a>
+    			</div>
+  			</li>	
+  			<li>
+  				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Chex-Mix-Pile.jpg/220px-Chex-Mix-Pile.jpg" alt="Chex Mix Pile image">
+    			<h3>Chex Mix Pile</h3>
+    			<h5>₦10:00</h5>
+    			<div class="addtocart">
+    				<a class="addtocartbutton" href="#">Add to cart</a>
+    			</div>
+  			</li>	
+  			<li>
+  				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Chex-Mix-Pile.jpg/220px-Chex-Mix-Pile.jpg" alt="Chex Mix Pile image">
+    			<h3>Chex Mix Pile</h3>
+    			<h5>₦10:00</h5>
+    			<div class="addtocart">
+    				<a class="addtocartbutton" href="#">Add to cart</a>
+    			</div>
+  			</li>	
+  			<li>
+  				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Chex-Mix-Pile.jpg/220px-Chex-Mix-Pile.jpg" alt="Chex Mix Pile image">
+    			<h3>Chex Mix Pile</h3>
+    			<h5>₦10:00</h5>
+    			<div class="addtocart">
+    				<a class="addtocartbutton" href="#">Add to cart</a>
+    			</div>
+  			</li>	
+  			<li>
+  				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Chex-Mix-Pile.jpg/220px-Chex-Mix-Pile.jpg" alt="Chex Mix Pile image">
+    			<h3>Chex Mix Pile</h3>
+    			<h5>₦10:00</h5>
+    			<div class="addtocart">
+    				<a class="addtocartbutton" href="#">Add to cart</a>
+    			</div>
+  			</li>		
+  		</ul>
 
-		<div class="featuredproduct">
-			<div class="eachfeatures">
-				<img class="featureimage" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Chex-Mix-Pile.jpg/220px-Chex-Mix-Pile.jpg" alt="Chex Mix">
-				<p class="featuredescription">Chex Mix</p>
-				<hr />
-				<div class="priceandcart">
-					<span class="price">$10</span>
-					<a href="#" class="addtocart">Add to cart</a>
-				</div>
-			</div>
-		</div>
-
-		<div class="featuredproduct">
-			<div class="eachfeatures">
-				<img class="featureimage" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Chex-Mix-Pile.jpg/220px-Chex-Mix-Pile.jpg" alt="Chex Mix">
-				<p class="featuredescription">Chex Mix</p>
-				<hr />
-				<div class="priceandcart">
-					<span class="price">$10</span>
-					<a href="#" class="addtocart">Add to cart</a>
-				</div>
-			</div>
-		</div>
-
-		<div class="featuredproduct">
-			<div class="eachfeatures">
-				<img class="featureimage" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Chex-Mix-Pile.jpg/220px-Chex-Mix-Pile.jpg" alt="Chex Mix">
-				<p class="featuredescription">Chex Mix</p>
-				<hr />
-				<div class="priceandcart">
-					<span class="price">$10</span>
-					<a href="#" class="addtocart">Add to cart</a>
-				</div>
-			</div>
-		</div>
 
 	</article>
+
 	<br/>
 	<div id="featuresbutton">
 		<a id="seemorefeatures" href="html/delicacies.html">See More</a>
@@ -126,27 +114,13 @@
 	<br/>
 	
 	
+	<hr />
 	<footer class="footercontainer">
-		<div class="socialmediaicons">
-			<a class="eachsocialmediaicon" href="">
-				<i class="fab fa-facebook"></i>
-			</a>
-			<a class="eachsocialmediaicon" href="">
-				<i class="fab fa-twitter-square"></i>
-			</a>
-			<a class="eachsocialmediaicon" href="">
-				<i class="fab fa-instagram"></i>
-			</a>
-			<a class="eachsocialmediaicon" href="">
-				<i class="fab fa-google-plus-square"></i>
-			</a>
-		</div>
 		<div class="copyrightinfo">
 			<span class="year">2018 <i class="far fa-copyright"></i> Fast Food Fast</span>
 		</div>
 	</footer>
-
-
+	
 
 	<script src="js/app.js"></script>
 </body>
