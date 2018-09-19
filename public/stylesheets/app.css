@@ -20,19 +20,46 @@ body {
 	padding: 0 40px;
 }
 
+<<<<<<< HEAD:css/app.css
 main.contactcontainer {
     padding: 0 40%;
 }
 
+||||||| merged common ancestors
+div.header {
+	padding-top: 10px;
+}
+
+.contact {
+	font-size: 15px;
+	margin-left: 10px;
+	margin-bottom: 20px;
+	color: #485460;
+}
+=======
+main.contactcontainer {
+    padding: 0 40%;
+}
+>>>>>>> d40c7ed4b06fab0c81df50a563882d5c949f6900:public/stylesheets/app.css
 
 
+<<<<<<< HEAD:css/app.css
 header {
     position: fixed; 
     text-align: left;
     width: 100vw;
     z-index: 3;
 }
+||||||| merged common ancestors
+div.brand {
+	width: 35%;
+	min-width: 300px;
+	display: flex;
+}
+=======
+>>>>>>> d40c7ed4b06fab0c81df50a563882d5c949f6900:public/stylesheets/app.css
 
+<<<<<<< HEAD:css/app.css
 header div i {
     padding-left: 13px;
     font-size: 30px;
@@ -42,64 +69,206 @@ header div h1 {
     padding: 0 0 0 30px;
     margin: 0;
     font-size: 30px;
+||||||| merged common ancestors
+.search {
+	width: 35%;
+	display: flex;
 }
 
+.cartsignin {
+	width: 15%;
+	min-width: 150px;
+	display: flex;
+	justify-content: space-between;
+=======
+header { 
+    text-align: left;
+    width: 100vw;
+>>>>>>> d40c7ed4b06fab0c81df50a563882d5c949f6900:public/stylesheets/app.css
+}
+
+<<<<<<< HEAD:css/app.css
 header div {
     display: flex;
     align-items: center;
     height: 55px;
+||||||| merged common ancestors
+i.fas.fa-utensils {
+	font-size: 50px;
+	margin-right: 10px;
+	padding-top: 5px;
+	color: #fff;
+=======
+header div i {
+    padding-left: 13px;
+    font-size: 30px;
+>>>>>>> d40c7ed4b06fab0c81df50a563882d5c949f6900:public/stylesheets/app.css
 }
 
+<<<<<<< HEAD:css/app.css
 header div, nav {
     background: #00803e;
+||||||| merged common ancestors
+h1.brandname {
+	margin: 0 0 0 10px;
+	font-size: 30px;
+	text-align: center;
+	padding-top: 13px;
+	color: #00803e;
+=======
+header div h1 {
+    padding: 0 0 0 30px;
+    margin: 0;
+    font-size: 30px;
+>>>>>>> d40c7ed4b06fab0c81df50a563882d5c949f6900:public/stylesheets/app.css
 }
 
+<<<<<<< HEAD:css/app.css
 header h1, nav li a, header div i {
     color: #f7f1e3;
+||||||| merged common ancestors
+input[type=text], button.searchicon {
+	height: 40px;
+	font-size: 25px;
+=======
+header div {
+    display: flex;
+    align-items: center;
+    height: 55px;
+>>>>>>> d40c7ed4b06fab0c81df50a563882d5c949f6900:public/stylesheets/app.css
 }
 
+<<<<<<< HEAD:css/app.css
 nav {
     position: absolute;
     display: none; 
     width: 150px;
     z-index: 2;
+||||||| merged common ancestors
+.search input[type=text] {
+	width: 80%;
+	min-width: 100px;
+	padding-left: 10px;
+=======
+header div, nav {
+    background: #00803e;
+>>>>>>> d40c7ed4b06fab0c81df50a563882d5c949f6900:public/stylesheets/app.css
 }
 
+<<<<<<< HEAD:css/app.css
 nav ul li {
     list-style: none;
     padding: 13px;
+||||||| merged common ancestors
+.search button.searchicon {
+	width: 20%;
+	min-width: 50px;
+=======
+header h1, nav li a, header div i {
+    color: #f7f1e3;
+>>>>>>> d40c7ed4b06fab0c81df50a563882d5c949f6900:public/stylesheets/app.css
 }
 
+<<<<<<< HEAD:css/app.css
 nav ul {
     padding: 0;
     margin: 0;
+||||||| merged common ancestors
+i.fas.fa-shopping-cart, span.signin {
+	text-align: center;
+	padding-top: 3px;
+	font-size: 25px;
+	height: 40px;
+=======
+nav {
+    position: absolute;
+    display: none; 
+    width: 150px;
+    z-index: 2;
+>>>>>>> d40c7ed4b06fab0c81df50a563882d5c949f6900:public/stylesheets/app.css
 }
 
+<<<<<<< HEAD:css/app.css
 nav li a {
     text-decoration: none;
     font-size: 14px;
+||||||| merged common ancestors
+i.fas.fa-shopping-cart{
+	width: 40%;
+	color: #fff;
+	padding-top: 5px;
+=======
+nav ul li {
+    list-style: none;
+    padding: 13px;
+>>>>>>> d40c7ed4b06fab0c81df50a563882d5c949f6900:public/stylesheets/app.css
 }
 
+<<<<<<< HEAD:css/app.css
 nav li a:hover {
     color: black;
+||||||| merged common ancestors
+i.fas.fa-shopping-cart:hover {
+	font-size: 23px;
+=======
+nav ul {
+    padding: 0;
+    margin: 0;
+>>>>>>> d40c7ed4b06fab0c81df50a563882d5c949f6900:public/stylesheets/app.css
 }
 
+<<<<<<< HEAD:css/app.css
 .navhr {
     margin: 0;
+||||||| merged common ancestors
+span.signin {
+	width: 60%;
+	font-size: 20px;
+	margin-top: 6px;	
+=======
+nav li a {
+    text-decoration: none;
+    font-size: 14px;
+>>>>>>> d40c7ed4b06fab0c81df50a563882d5c949f6900:public/stylesheets/app.css
 }
 
+<<<<<<< HEAD:css/app.css
 a.cartcount, span.bracketleft, span.bracketright {
     display: none;
+||||||| merged common ancestors
+span.signin a, div.contact a {
+	text-decoration: none;
+	color: #00803e;
+=======
+nav li a:hover {
+    color: black;
+>>>>>>> d40c7ed4b06fab0c81df50a563882d5c949f6900:public/stylesheets/app.css
 }
 
+<<<<<<< HEAD:css/app.css
 a.cartcount:hover {
    color: #d63031;
    cursor: pointer; 
+||||||| merged common ancestors
+span.signin a:hover {
+	color: #fff;
+=======
+.navhr {
+    margin: 0;
+>>>>>>> d40c7ed4b06fab0c81df50a563882d5c949f6900:public/stylesheets/app.css
 }
 
+<<<<<<< HEAD:css/app.css
 .mycart, span.bracketleft, span.bracketright {
     color: #fff;
     font-size: 14px;
+||||||| merged common ancestors
+div.contact a:hover {
+	color: #fff;
+=======
+span.cartcount {
+    display: none;
+>>>>>>> d40c7ed4b06fab0c81df50a563882d5c949f6900:public/stylesheets/app.css
 }
 
 /*******HEADER/NAV LINKS ENDS HERE********/
@@ -191,6 +360,7 @@ form.addPage {
     border: 1px solid rgb(194, 221, 158);
 }
 
+<<<<<<< HEAD:css/app.css
 .addPageText {
     height: 30px; 
 }
@@ -204,8 +374,115 @@ main.contactcontainer {
     padding: 0 30px;
     max-width: 800px;
     margin: 0 auto;
+||||||| merged common ancestors
+span.price {
+	padding-top: 2px;
+	margin-left: 8px;
+	color: #00803e;
+=======
+.addPageText {
+    height: 30px; 
+>>>>>>> d40c7ed4b06fab0c81df50a563882d5c949f6900:public/stylesheets/app.css
 }
 
+<<<<<<< HEAD:css/app.css
+||||||| merged common ancestors
+span.price, a.addtocart {
+	margin-top: 15px;
+	margin-bottom: 15px;
+} 
+=======
+.textAreaContent {
+    height: 200px;
+    padding-top: 8px;
+}
+
+main.contactcontainer {
+    padding: 0 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+>>>>>>> d40c7ed4b06fab0c81df50a563882d5c949f6900:public/stylesheets/app.css
+
+<<<<<<< HEAD:css/app.css
+
+/*********************************************************************/
+/************************Cover image Section*************************/
+/*******************************************************************/
+
+#coverimage {
+	width: 100%;
+	height: 400px;
+}
+
+/*@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+body { margin: 0; } 
+div#slider { overflow: hidden; }
+div#slider figure img { width: 20%; float: left; height: 400px; }
+div#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite; 
+}*/
+
+
+/*********************************************************************/
+/************************Features  - Products**************************/
+/*******************************************************************/
+
+img {
+	max-width: 100%; 
+	display: block;
+	height: 250px;
+}
+    
+h3, h5 {
+	color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 8px;
+}
+.listing {
+  padding: 0px;
+  list-style: none;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
+}
+.listing li {
+  background-color: #ff8300;
+  border: 1px solid #ffe066;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.listing .addtocart {
+  background-color: #00803e;
+  margin-top: auto;
+  border-top: 1px solid #ffe066;
+  padding: 10px;
+  text-align: center;
+}
+
+.listing .addtocart a {
+||||||| merged common ancestors
+a.addtocart, a#seemorefeatures {
+=======
 
 
 /*********************************************************************/
@@ -277,6 +554,7 @@ h3, h5 {
 }
 
 .listing .addtocart a {
+>>>>>>> d40c7ed4b06fab0c81df50a563882d5c949f6900:public/stylesheets/app.css
 	text-decoration: none;
 	color: #ff8300;
 }
@@ -590,6 +868,7 @@ section.admindashboard{
     width: 700px;
 }
 
+<<<<<<< HEAD:css/app.css
 #addproductform {
     display: flex;
     flex-direction: column;
@@ -600,6 +879,51 @@ section.admindashboard{
      border-radius: 5px;
 }
 
+.addproductinput {
+    height: 40px;
+    border: 1px solid grey;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.addproductinput:hover {
+    border: 1px solid #44bd32;
+||||||| merged common ancestors
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    background-color: #fff;
+    margin-top: 15px;
+=======
+#addproductform {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.addproductbutton, .addproductinput {
+     border-radius: 5px;
+>>>>>>> d40c7ed4b06fab0c81df50a563882d5c949f6900:public/stylesheets/app.css
+}
+
+<<<<<<< HEAD:css/app.css
+.addproductbutton {
+    margin-top: 10px;
+    padding: 10px;
+    max-width: 150px;
+    border: 1px solid grey;
+    font-size: 16px;
+}
+
+.addproductbutton:hover {
+    background-color: #44bd32;
+}
+
+
+||||||| merged common ancestors
+=======
 .addproductinput {
     height: 40px;
     border: 1px solid grey;
@@ -624,6 +948,7 @@ section.admindashboard{
 }
 
 
+>>>>>>> d40c7ed4b06fab0c81df50a563882d5c949f6900:public/stylesheets/app.css
 /********ORDERS-ADMIN********/
 #allorders {
 	border-collapse: collapse;
