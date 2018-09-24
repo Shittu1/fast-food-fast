@@ -1,6 +1,7 @@
 * {box-sizing: border-box;}
 
 html, body {
+    height: 100%;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
@@ -9,15 +10,21 @@ html, body {
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 21px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
 }
 
+main {
+  flex: 1;
+}
 
 /*********************************************************************/
 /*Logo, Brand Name, Search input, Shopping cart logo and sign in tab*/
 /*******************************************************************/
 
 .generalfeatures {
-	padding: 0 40px;
+    padding: 0 40px;
 }
 
 main.contactcontainer {
@@ -211,13 +218,13 @@ main.contactcontainer {
 /*********************************************************************/
 /************************Cover image Section*************************/
 /*******************************************************************/
-
-#coverimage {
+img#coverimage {
     width: 100%;
-    height: 400px;
+    height: auto;
+    height: 70vh;
 }
 
-/*@keyframes slidy {
+@keyframes slidy {
 0% { left: 0%; }
 20% { left: 0%; }
 25% { left: -100%; }
@@ -240,7 +247,7 @@ div#slider figure {
   text-align: left;
   font-size: 0;
   animation: 30s slidy infinite; 
-}*/
+}
 
 
 /*********************************************************************/
@@ -248,13 +255,13 @@ div#slider figure {
 /*******************************************************************/
 
 img {
-	max-width: 100%; 
-	display: block;
-	height: 250px;
+    max-width: 100%; 
+    display: block;
+    height: 250px;
 }
     
 h3, h5 {
-	color: #fff;
+    color: #fff;
     text-align: center;
     margin: 0;
     padding: 8px;
@@ -282,42 +289,42 @@ h3, h5 {
 }
 
 .listing .addtocart a {
-	text-decoration: none;
-	color: #ff8300;
+    text-decoration: none;
+    color: #ff8300;
 }
 
 .listing .addtocart a:hover {
-	color: #fff;
+    color: #fff;
 }
 
 h3#featureheading {
-	background: #00803e;
-	height: 50px;
-	padding-top: 10px;
-	color: #fff;
-	width: 100vw;
+    background: #00803e;
+    height: 50px;
+    padding-top: 10px;
+    color: #fff;
+    width: 100vw;
     text-align: left;
 }
 
 a#seemorefeatures {
-	text-decoration: none;
-	color: #fff;
+    text-decoration: none;
+    color: #fff;
 }
 
 div#featuresbutton {
-	text-align: center;
-	margin-top: 12px;
+    text-align: center;
+    margin-top: 12px;
 }
 
 a#seemorefeatures {
-	border: 1px solid gray;
-	border-radius: 6px;
-	background: #00803e; 
-	padding: 10px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    background: #00803e; 
+    padding: 10px;
 }
 
 a#seemorefeatures:hover {
-	color: #ff8300;
+    color: #ff8300;
 }
 /************************End of Features  - Products**************************/
 
@@ -327,41 +334,41 @@ a#seemorefeatures:hover {
 /*******************************************************************/
 
 div#signup {
-	max-width: 35%;
-	padding: 2%;
-	margin: 0 auto;
+    max-width: 35%;
+    padding: 2%;
+    margin: 0 auto;
 }
 
 div#signup h1 {
-	margin: 0;
-	font-size: 23px;
-	text-align: center;
+    margin: 0;
+    font-size: 23px;
+    text-align: center;
 }
 
 .signupinput, 
-.all {					/***Sign-up and Log-in form***/
-	width: 100%;
+.all {                  /***Sign-up and Log-in form***/
+    width: 100%;
 }
 
 .signupinput, .all {    /***Sign-up and Log-in form***/
-	padding: 5px;
-	margin-bottom: 20px;
-	height: 33px;
+    padding: 5px;
+    margin-bottom: 20px;
+    height: 33px;
     border-radius: 5px;
     border: 1px solid grey;
 }
 
 div#signup input[type=submit] {
-	background-color: #00803e;
-	border: none;
-	color: #fff;
-	font-size: 20px;
+    background-color: #00803e;
+    border: none;
+    color: #fff;
+    font-size: 20px;
 }
 
 div#signup input[type=submit]:hover,
 .signupinput input[type=submit]:hover,
 .signupinput {  /***Sign-up form***/
-	border: 1px solid #00803e;
+    border: 1px solid #00803e;
 }
 
 .logininfo {
@@ -385,30 +392,30 @@ div#signup input[type=submit]:hover,
 /******************************LOG-IN/SIGN-IN FORM**************************/
 /*******************************************************************/
 section.signinformcontainer.generalfeatures h4 {
-	text-align: center;
+    text-align: center;
 }
 
 form.signinform {
-	display: flex;
-	flex-direction: column;
-	width: 35%;
-	margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    margin: 0 auto;
 }
 
 .signinformlabelone {
-	margin-bottom: 5px;
+    margin-bottom: 5px;
 }
 .signinformlabeltwo {
-	margin: 22px 0 5px 0;
+    margin: 22px 0 5px 0;
 }
 
 form.signinform input[type=submit] {
-	border: none;
-	margin-top: 20px;
-	height: 40px;
-	background-color: #00803e;
-	color: #fff;
-	font-size: 20px
+    border: none;
+    margin-top: 20px;
+    height: 40px;
+    background-color: #00803e;
+    color: #fff;
+    font-size: 20px
 
 }
 
@@ -416,15 +423,21 @@ form.signinform input[type=submit] {
 /*********************************************************************/
 /****************************ABOUT-US PAGE***************************/
 /*******************************************************************/
+.contactlink {
+    text-decoration: none;
+}
 
+.contactlink {
+    
+}
 
 div#aboutcontainer {
-	margin: 0 auto;
-	width: 80%;
+    margin: 0 auto;
+    width: 80%;
 }
 
 div#aboutcontainer p {
-	text-align: justify;
+    text-align: justify;
 }
 
 /*********************************************************************/
@@ -507,48 +520,48 @@ div#aboutcontainer p {
 
 /********ADMIN TITLE********/
 .admintitle {
-	background-color: #596275;
-	width: 250px;
-	padding: 10px;
+    background-color: #596275;
+    width: 250px;
+    padding: 10px;
 }
 .admintitle h3 {
-	margin: 0;
-	padding: 0;
-	color: #ff5252;
+    margin: 0;
+    padding: 0;
+    color: #ff5252;
 }
 
 
 /********ADMIN NAVIGATION********/
 section.admindashboard{
-	display: flex;
-	justify-content: space-between;
-	flex-direction: column;
-	overflow-x: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    overflow-x: auto;
 }
 
 .adminsidebar, .adminbody {
-	min-width: 580px;
+    min-width: 580px;
 }
 
 .adminsidebar {
-	width: 100%;
-	display: flex;
-	justify-content: space-around;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 
 }
 
 .adminsidebar a {
-	text-decoration: none;
-	margin-bottom: 10px;
-	border: 1px solid #00803e;
-	border-radius: 5px;
-	padding: 10px;
-	color: #00803e;
+    text-decoration: none;
+    margin-bottom: 10px;
+    border: 1px solid #00803e;
+    border-radius: 5px;
+    padding: 10px;
+    color: #00803e;
 }
 
 .adminsidebar a:hover {
-	background-color: #dff9fb;
-	color: #6ab04c;
+    background-color: #dff9fb;
+    color: #6ab04c;
 }
 
 /********PRODUCTS-ADMIN********/
@@ -558,11 +571,11 @@ section.admindashboard{
 }
 
 .adminbody {
-	width: 100%;
+    width: 100%;
 }
 
 #allproducts {
-	border-collapse: collapse;
+    border-collapse: collapse;
     width: 100%;
     font-size: 16px;
 }
@@ -583,11 +596,11 @@ section.admindashboard{
 
 /********ADD NEW PRODUCT-ADMIN********/
 .adminbody h4 {
-	text-align: center;
+    text-align: center;
 }
 
 .adminbody input[type=date]{
-	height: 43px;
+    height: 43px;
 }
 
 #addproductdiv {
@@ -631,7 +644,7 @@ section.admindashboard{
 
 /********ORDERS-ADMIN********/
 #allorders {
-	border-collapse: collapse;
+    border-collapse: collapse;
     width: 100%;
     font-size: 16px;
 }
@@ -658,7 +671,7 @@ section.admindashboard{
 
 /********CHANGE-PASSWORD-ADMIN********/
 .signinform input[type=password] {
-	height: 42px;
+    height: 42px;
 }
 
 
@@ -668,27 +681,31 @@ section.admindashboard{
 /******************************Footer********************************/
 /*******************************************************************/
 
-div.copyrightinfo {
-	width: 100vw;
+.footercontainer {
+    background:#00803e; 
 }
 
 div.copyrightinfo {
-	height: 50px;
+    width: 100vw;
 }
 
 div.copyrightinfo {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
+    height: 50px;
 }
 
 div.copyrightinfo {
-	font-size: 18px;
-	color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div.copyrightinfo {
+    font-size: 18px;
+    color: #fff;
 }
 
 .year, .far.fa-copyright {
-    color: #00803e;
+    color: #fff;
 }
 
 
@@ -732,10 +749,11 @@ div.copyrightinfo {
     
     nav ul {
         display: flex;
-         margin-top: 5px;
+        margin-top: 5px;
         margin-right: 20px;
-        justify-content: space-around;
+        justify-content: flex-end;
         margin: 0;
+        margin-right: 100px;
     }
     
     .navhr {
@@ -744,10 +762,12 @@ div.copyrightinfo {
     
     nav ul li{
         margin-top: 2px; 
+
     }
 
      nav ul li a {
         font-size: 14px;
+        margin-left: 30px;
      }
     
 }
@@ -756,50 +776,50 @@ div.copyrightinfo {
 
 @media only screen and (max-width: 772px) {
 
-	div#signup {
-		max-width: 70%;
-	}
+    div#signup {
+        max-width: 70%;
+    }
 
-	form.signinform {
-		width: 60%;
-	}
+    form.signinform {
+        width: 60%;
+    }
 
-	.admindashboard.generalfeatures {
-		margin-right: 5%;
-	}
+    .admindashboard.generalfeatures {
+        margin-right: 5%;
+    }
 
 } 
    
 
 @media only screen and (max-width: 541px) {
-	div#slider figure img { height: 350px; }
+    div#slider figure img { height: 350px; }
 
-	form.signinform {
-		width: 80%;
-	}
-	
+    form.signinform {
+        width: 80%;
+    }
+    
 } 
 
 @media only screen and (max-width: 390px) {
-	.generalfeatures {
-		padding: 0 10px;
-	}
+    .generalfeatures {
+        padding: 0 10px;
+    }
 
-	div#signup, div#aboutcontainer {
-		max-width: 90%;
-	}
+    div#signup, div#aboutcontainer {
+        max-width: 90%;
+    }
 
 } 
 
 @media only screen and (max-width: 320px) {
 
-	body {
-		font-size: 18px;
-	}
-	
-	form.signinform, div#aboutcontainer{
-		width: 95%;
-	}
+    body {
+        font-size: 18px;
+    }
+    
+    form.signinform, div#aboutcontainer{
+        width: 95%;
+    }
 
     header div h1 {
         font-size: 25px;
