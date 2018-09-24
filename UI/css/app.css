@@ -425,15 +425,19 @@ form.signinform input[type=submit] {
 /*******************************************************************/
 .contactlink {
     text-decoration: none;
+    background: #ffeaa7;
+    padding: 5px;
 }
 
-.contactlink {
-    
+.contactlink:hover {
+    color: red; 
 }
 
 div#aboutcontainer {
     margin: 0 auto;
     width: 80%;
+    line-height: 28px;
+    word-spacing: 4px;
 }
 
 div#aboutcontainer p {
