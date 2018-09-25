@@ -219,9 +219,17 @@ main.contactcontainer {
 /************************Cover image Section*************************/
 /*******************************************************************/
 img#coverimage {
+    position: relative;
     width: 100%;
     height: auto;
     height: 70vh;
+}
+
+.imgtext {
+    position: absolute; 
+   top: 200px; 
+   left: 0; 
+   width: 100%;
 }
 
 @keyframes slidy {
@@ -267,11 +275,13 @@ h3, h5 {
     padding: 8px;
 }
 .listing {
-  padding: 0px;
+  padding: 20px 0 0 0;
   list-style: none;
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
+  margin: 0 auto;
+  
 }
 .listing li {
   background-color: #ff8300;
@@ -306,26 +316,26 @@ h3#featureheading {
     text-align: left;
 }
 
-a#seemorefeatures {
+/*a#seemorefeatures {
     text-decoration: none;
     color: #fff;
-}
+}*/
 
-div#featuresbutton {
+/*div#featuresbutton {
     text-align: center;
     margin-top: 12px;
-}
+}*/
 
-a#seemorefeatures {
+/*a#seemorefeatures {
     border: 1px solid gray;
     border-radius: 6px;
     background: #00803e; 
     padding: 10px;
-}
+}*/
 
-a#seemorefeatures:hover {
+/*a#seemorefeatures:hover {
     color: #ff8300;
-}
+}*/
 /************************End of Features  - Products**************************/
 
 
@@ -757,7 +767,7 @@ div.copyrightinfo {
         margin-right: 20px;
         justify-content: flex-end;
         margin: 0;
-        margin-right: 100px;
+        margin-right: 50px;
     }
     
     .navhr {
