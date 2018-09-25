@@ -94,6 +94,9 @@ nav li a:hover {
 .navhr {
     margin: 0;
 }
+a.cartcount {
+    margin: 0;
+}
 
 a.cartcount, span.bracketleft, span.bracketright {
     display: none;
@@ -118,6 +121,11 @@ main.container {
 
 
 /*******User Dropdown Starts********/
+
+.user {
+    font-size: 14px;
+    color: #fff;
+}
 
 .navbarcontent {
     position: relative;
@@ -153,10 +161,6 @@ main.container {
 
 .firsttwo {
     margin: 5px 0;
-}
-
-.cartnumber {
-    display: none;
 }
 
 /*******User Dropdown Ends********/
