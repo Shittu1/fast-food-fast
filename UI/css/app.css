@@ -423,6 +423,15 @@ div#signup input[type=submit]:hover,
 /*********************************************************************/
 /******************************LOG-IN/SIGN-IN FORM**************************/
 /*******************************************************************/
+.loginform {
+    background: #ffe066;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 70%;
+    padding: 30px;
+    margin-top: 10%;
+}
+
 section.signinformcontainer.generalfeatures h4 {
     text-align: center;
 }
@@ -430,7 +439,6 @@ section.signinformcontainer.generalfeatures h4 {
 form.signinform {
     display: flex;
     flex-direction: column;
-    width: 35%;
     margin: 0 auto;
 }
 
@@ -805,6 +813,15 @@ div.copyrightinfo {
         font-size: 14px;
         margin-left: 30px;
      }
+
+
+/*** login form ***/
+.loginform {
+    width: 40%;
+    padding: 10px;
+    margin-top: 5%;
+}
+
     
 }
 
