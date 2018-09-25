@@ -155,6 +155,10 @@ main.container {
     margin: 5px 0;
 }
 
+.cartnumber {
+    display: none;
+}
+
 /*******User Dropdown Ends********/
 
 
@@ -262,10 +266,24 @@ div#slider figure {
 /************************Features  - Products**************************/
 /*******************************************************************/
 
+.categories {
+    width: 300px; 
+    background: #ffe066;
+    border-radius: 1px;
+    text-align: center;
+    margin-top: 25px;
+
+}
+
+.categories h3 {
+    color: #00803e;
+}
+
 img {
     max-width: 100%; 
     display: block;
     height: 250px;
+    color: 
 }
     
 h3, h5 {

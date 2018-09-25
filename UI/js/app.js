@@ -21,7 +21,7 @@ let loginbutton = document.querySelector("#loginbutton");
 if(loginbutton){
     loginbutton.addEventListener('click', () => {
         if(loginpassword.value === "admin"){
-            window.open("../html/admin.html");
+            window.open("../admin/allproducts.html");
         }
     });
 }
