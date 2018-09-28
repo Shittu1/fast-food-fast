@@ -36,6 +36,7 @@ describe('API Orders Endpoint Testing', function () {
 			res.body.should.be.a('object');
 			res.body.should.have.property('name');
 			res.body.should.have.property('quantity');
+			console.log(res.body);
 			done();
 		});
 	});
@@ -56,7 +57,7 @@ describe('API Orders Endpoint Testing', function () {
 		});
 	});
 	//Test to update status of an order
-	it('should update the status of an order on /:id GET', function (done) {
+	it('should update the status of an order on /:id PUT', function (done) {
 		var id = 2;
 		_chai2.default.request(_app2.default).put('/api/v1/orders/' + id).end(function (err, res) {
 			res.should.have.status(200);

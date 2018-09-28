@@ -28,7 +28,7 @@ export const getOrderById = (req, res) => {
       }
     return res.status(404).send({
     success: 'false',
-    message: 'order does not exist'
+    message: 'order does not exist',
   });
 }
 

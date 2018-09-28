@@ -1,3 +1,5 @@
+//Acknowledgements
+//https://stackoverflow.com/questions/52588068/cant-set-headers-after-they-are-sent-is-the-error-i-get-when-i-run-npm-test
 import chai from 'chai';
 import chaiHttp from 'chai-http';
 import app from '../app.js';
@@ -11,23 +13,19 @@ describe('API Orders Endpoint Testing', () => {
 		chai.request(app)
 			.get('/api/v1/orders')
 			.end((err, res) => {
-				res.should.have.status(200);
-				res.body.should.be.a('object');
-				res.body.should.have.property('name');
-      			res.body.should.have.property('quantity');
+				res.body.should.have.property('success');
+				res.body.success.should.be.equal('true');
 				done();
 			});
 	});
 	//Test to Fetch a single order
 	it('should get a SINGLE order on /:id GET', (done) => {
-		const id = 1;
+		const id = 2;
 		chai.request(app)
 			.get(`/api/v1/orders/${id}`)
 			.end((err, res) => {
-				res.should.have.status(200);
-				res.body.should.be.a('object');
-				res.body.should.have.property('name');
-      			res.body.should.have.property('quantity');
+				res.body.should.have.property('success');
+				res.body.success.should.be.equal('true');
 				done();
 			});
 	});
@@ -43,28 +41,29 @@ describe('API Orders Endpoint Testing', () => {
 		      	date: new Date().toDateString()
 				})
 			.end((err, res) => {
-				res.should.have.status(200);
-				res.body.should.be.a('object');
-				res.body.should.have.property('name');
-      			res.body.should.have.property('quantity');
+				res.body.should.have.property('success');
+				res.body.success.should.be.equal('true');
 				done();
 			});
 	});
 	//Test to update status of an order
-	it('should update the status of an order on /:id GET', (done) => {
-		const id = 2;
+	it('should update the status of an order on /:id PUT', (done) => {
+		const id = 3;
 		chai.request(app)
 			.put(`/api/v1/orders/${id}`)
+			.send({
+		      	orderStatus: "In Transit",
+		      	name: "Chin-Chin",
+		      	quantity: "5",
+		      	price: "30",
+		      	date: new Date().toDateString()
+				})
 			.end((err, res) => {
-				res.should.have.status(200);
-				res.body.should.be.a('object');
-				res.body.should.have.property('name');
-      			res.body.should.have.property('quantity');
+				res.body.should.have.property('success');
+				res.body.success.should.be.equal('true');
 				done();
 			});
 	});
-
-
 
 
 }); 
