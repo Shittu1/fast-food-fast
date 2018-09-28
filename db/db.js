@@ -8,7 +8,7 @@ const orders =  [
       quantity: "2",
       price: "10",
       date: new Date().toDateString()
-    }
+    },
     {
       id: 2,
       orderStatus: "In Transit",
@@ -16,7 +16,7 @@ const orders =  [
       quantity: "2",
       price: "10",
       date: new Date().toDateString()
-    }
+    },
     {
       id: 3,
       orderStatus: "In Transit",
@@ -24,7 +24,7 @@ const orders =  [
       quantity: "2",
       price: "10",
       date: new Date().toDateString()
-    }
+    },
     {
       id: 4,
       orderStatus: "In Transit",
