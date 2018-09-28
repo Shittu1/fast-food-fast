@@ -6,13 +6,9 @@ Object.defineProperty(exports, "__esModule", {
 
 var _express = require('express');
 
-var _express2 = _interopRequireDefault(_express);
-
 var _orders = require('../controllers/orders');
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var router = _express2.default.Router();
+var router = (0, _express.Router)();
 
 router.get('/', _orders.allOrders);
 router.get('/:id', _orders.getOrderById);

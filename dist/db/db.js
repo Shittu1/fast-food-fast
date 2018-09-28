@@ -3,8 +3,6 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-
-
 var orders = [{
   id: 1,
   orderStatus: "In Transit",

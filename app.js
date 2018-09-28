@@ -1,7 +1,6 @@
 import express from 'express';
-import db from './db/db';
 import bodyParser from 'body-parser';
-
+import babelRegister from 'babel-register';
 import orders from './routes/orders';
 
 const app = express();
@@ -23,3 +22,6 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`server running on port ${PORT}`)
 });
+
+
+export default app;
