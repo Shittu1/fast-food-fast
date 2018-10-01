@@ -1,7 +1,8 @@
-import express from 'express';
+
+import {Router} from 'express';
 import { allOrders, getOrderById, placeAnOrder, updateOrderStatus } from '../controllers/orders';
 
-const router = express.Router();
+const router = Router();
 
 router.get('/', allOrders);
 router.get('/:id', getOrderById);

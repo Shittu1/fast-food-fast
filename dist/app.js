@@ -1,16 +1,20 @@
 'use strict';
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
 var _express = require('express');
 
 var _express2 = _interopRequireDefault(_express);
 
-var _db = require('./db/db');
-
-var _db2 = _interopRequireDefault(_db);
-
 var _bodyParser = require('body-parser');
 
 var _bodyParser2 = _interopRequireDefault(_bodyParser);
+
+var _babelRegister = require('babel-register');
+
+var _babelRegister2 = _interopRequireDefault(_babelRegister);
 
 var _orders = require('./routes/orders');
 
@@ -37,3 +41,5 @@ var PORT = process.env.PORT || 5000;
 app.listen(PORT, function () {
   console.log('server running on port ' + PORT);
 });
+
+exports.default = app;
