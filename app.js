@@ -3,7 +3,7 @@ import bodyParser from 'body-parser';
 import babelRegister from 'babel-register';
 import orders from './routes/orders';
 import auth from './routes/users';
-import menu from './routes/menu';
+// import menu from './routes/menu';
 
 const app = express();
 
@@ -22,7 +22,7 @@ app.use('/api/v1/orders', orders);
 // Users
 app.use('/auth', auth);
 // Menu
-app.use('/menu', menu);
+// app.use('/menu', menu);
 
 
 const PORT = process.env.PORT || 5000;

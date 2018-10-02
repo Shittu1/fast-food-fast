@@ -1,4 +1,4 @@
-const users = `create table if not exist users (
+const users = `create table if not exists users (
 	id SERIAL PRIMARY KEY,
 	firstName varchar(20) NOT NULL,
 	lastName varchar(20) NOT NULL,

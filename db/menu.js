@@ -1,5 +1,5 @@
 
-const menu = `create table if not exist menu (
+const menu = `create table if not exists menu (
 	id SERIAL PRIMARY KEY,
 	name varchar(20) NOT NULL,
 	price varchar(20) NOT NULL,
