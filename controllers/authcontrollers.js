@@ -15,11 +15,11 @@ export const signup = (req, res) => {
   //encrypt password with Bcrypt’s hashing method
   let hashedPassword = bcrypt.hashSync(req.body.password, bcrypt.genSaltSync(8));
   pool.query('INSERT INTO users(firstName, lastName, email, password) values($1, $2, $3, $4)', 
-  			[req.body.firstname, req.body.lastname, req.body.email, hashedPassword], (err, res) => {
+  	  [req.body.firstname, req.body.lastname, req.body.email, hashedPassword], (err, res) => {
 	  console.log(err, res)
 	  pool.end()
-	})
-  (err, user) => {
+	}),
+  	(err, user) => {
     if (err) return res.status(500).send("There was a problem registering the user.")
     // create a token
     let token = jwt.sign({ id: user._id }, config.secret, {
@@ -28,7 +28,7 @@ export const signup = (req, res) => {
     res.status(200).send({ auth: true, token: token });
   }; 
 
-
+}
 
 export const me = (req, res) => {
 	let token = req.headers['x-access-token'];
