@@ -27,7 +27,7 @@ describe('auth API testing', () => {
 		chai.request(app)
 			.post('/auth/login')
 			.send({
-		      	email: "abc@gmail.com",
+		      	email: "shttdms@gmail.com",
 		      	password: "abc"
 				})
 			.end((err, res) => {

@@ -9,7 +9,7 @@ describe('auth API testing', () => {
 	//test for signup API
 	it('ADD A MEAL option to the menu on /menu POST', (done) => {
 		chai.request(app)
-			.post('/auth/menu')
+			.post('/menu')
 			.send({
 		      	firstname: "Adams",
 		      	lastname: "Shittu",
@@ -23,9 +23,9 @@ describe('auth API testing', () => {
 			});
 	});
 
-	it('ADD A MEAL option to the menu on /menu POST', (done) => {
+	it('GET available menu', (done) => {
 		chai.request(app)
-			.get('/auth/menu')
+			.get('/menu')
 			.send({
 		      	firstname: "Adams",
 		      	lastname: "Shittu",

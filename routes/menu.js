@@ -1,9 +1,10 @@
 import {Router} from 'express';
-import { menu } from '../controllers/menucontrollers';
+import { postMenu, getMenu } from '../controllers/menucontrollers';
 const router = Router();
 
 
-router.post('/menu', menu);
+router.post('/menu', postMenu);
+router.get('/menu', getMenu);
 
 
 export default router;
