@@ -4,8 +4,9 @@
   "description": "An app for ordering fast food online.\r To view the admin panel log in with \"admin\" as password.\r The UI is responsive feel free to resize your browser to see what happens.\r https://shittu1.github.io/fast-food-fast/.",
   "main": "app.js",
   "scripts": {
-    "test": "mocha --recursive --compilers js:babel-core/register --require babel-register",
-    "start": "nodemon --exec babel-node ./app.js"
+    "test": "mocha --exit --recursive --compilers js:babel-core/register --require babel-register",
+    "start": "nodemon --exec babel-node ./app.js",
+    "tables": "nodemon --exec babel-node ./db/index.js"
   },
   "repository": {
     "type": "git",
@@ -18,9 +19,13 @@
   },
   "homepage": "https://github.com/Shittu1/fast-food-fast#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
+    "dotenv": "^6.0.0",
     "express": "^4.16.3",
-    "morgan": "^1.9.1"
+    "jsonwebtoken": "^8.3.0",
+    "morgan": "^1.9.1",
+    "pg": "^7.4.3"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

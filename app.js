@@ -2,6 +2,8 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import babelRegister from 'babel-register';
 import orders from './routes/orders';
+import auth from './routes/users';
+// import menu from './routes/menu';
 
 const app = express();
 
@@ -17,6 +19,11 @@ app.get('/', (req, res) => {
 
 // Orders
 app.use('/api/v1/orders', orders);
+// Users
+app.use('/auth', auth);
+// Menu
+// app.use('/menu', menu);
+
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
