@@ -9,7 +9,7 @@ describe('auth API testing', () => {
 	//test for signup API
 	it('should signup user successfully on /signup POST', (done) => {
 		chai.request(app)
-			.post('/auth/signup')
+			.post('/auth/menu')
 			.send({
 		      	firstname: "Adams",
 		      	lastname: "Shittu",
@@ -17,24 +17,10 @@ describe('auth API testing', () => {
 		      	password: "abc"
 				})
 			.end((err, res) => {
-				res.body.should.have.property('auth');
-				res.body.auth.should.be.equal(true);
+				res.body.should.have.property('success');
+				res.body.success.should.be.equal('true');
 				done();
 			});
 	});
 
-	it('should login user successfully on /login POST', (done) => {
-		chai.request(app)
-			.post('/auth/login')
-			.send({
-		      	email: "abc@gmail.com",
-		      	password: "abc"
-				})
-			.end((err, res) => {
-				console.log(res.body);
-				res.body.should.have.property('auth');
-				res.body.auth.should.be.equal(true);
-				done();
-			});
-	});
 });
