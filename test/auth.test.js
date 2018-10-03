@@ -7,7 +7,7 @@ let should = chai.should();
 
 describe('auth API testing', () => {
 	//test for signup API
-	it('should signup user successfully on /signup POST', (done) => {
+	it('should SIGNUP user successfully on /signup POST', (done) => {
 		chai.request(app)
 			.post('/auth/signup')
 			.send({
@@ -23,7 +23,7 @@ describe('auth API testing', () => {
 			});
 	});
 
-	it('should login user successfully on /login POST', (done) => {
+	it('should LOGIN user successfully on /login POST', (done) => {
 		chai.request(app)
 			.post('/auth/login')
 			.send({
