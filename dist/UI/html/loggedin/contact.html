@@ -12,7 +12,7 @@
 </head>
 <body>
     <!-----------Header---------->
-<main class="maintagforhomepage">
+<main>
 <header>
         <div>
             <i class="fas fa-bars"></i>
@@ -33,7 +33,7 @@
                     <span>
                         <span class="mycart">My Cart</span> 
                         <span class="bracketleft">(</span>
-                        <a class="cartcount" href="mycart.html">0</a>
+                        <a class="cartcount" href="/mycart">0</a>
                         <span class="bracketright">)</span>
                     </span>
                 </li>
@@ -44,8 +44,8 @@
                    
                     <div class="dropdown-content">
                         <div class="atags">
-                            <a class="firsttwo" href="myaccount.html">My Account</a>
-                            <a class="firsttwo" href="orderhistory.html">Order History</a>
+                            <a class="firsttwo" href="#">My Account</a>
+                            <a class="firsttwo" href="#">Order History</a>
                             <a class="firsttwo" href="../../index.html">Log Out</a> 
                         </div>
                     </div>
@@ -58,18 +58,44 @@
   <br />
     <br />
 
+    <main class="contactcontainer">
+        <p>Contact Us!</p>
 
-	<section class="generalfeatures">
-		<div id="aboutcontainer">
-			<h4>About us</h4>	
-			<p>Fast Food Fast is an online fast food delivery store with focus on very fast delivery of ordered fast food and at the same time not compromising quality. Fast Food Fast will serve the young, middle age and elderly people of Lagos metropolitan.</p>
-            <p>We offer for sale a wide variety of fast food and we also render home delivery services too. <a class="contactlink" href="contact.html">Contact</a> us if you have any questions.</p>
-		</div>
-	</section>
-	
+        <form class="addPage" action="" method="post">
+        
+            <div class="textDiv">
+                <label class="addPageLabel" for="firstname">First Name</label>
+                <input class="addPageText" type="text" name="first-name" placeholder="Your name..">
+            </div>
+            <div class="textDiv">
+                <label class="addPageLabel" for="last-name">Last Name</label>
+                <input class="addPageText" type="text" name="last-name" placeholder="Your last name..">
+            </div>
+             <div class="textDiv">
+                <label class="addPageLabel" for="email">Email</label>
+                <input class="addPageText" type="email" name="email" placeholder="Your email..">
+            </div>
+             <div class="textDiv">
+                <label class="addPageLabel" for="country">Country</label>
+                <input class="addPageText" type="country" name="country" placeholder="Your country..">
+            </div>
+            <div class="textAreaDiv">
+                <label class="addPageLabel" for="subject">Subject</label>
+                <textarea class="textAreaContent" name="subject" placeholder="Write something.."></textarea>
+            </div>
+            
+            <br/>
+            <button class="btnAddPage" type="submit">Submit</button>
+        
+        </form>
+    </main>
 
-	
-<br/>
+
+
+
+
+
+  <br/>
   <br/>
 
   </main>
@@ -88,3 +114,13 @@
     <script src="../../js/app.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+

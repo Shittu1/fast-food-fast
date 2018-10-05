@@ -36,10 +36,9 @@ main.contactcontainer {
 header {
     position: fixed; 
     text-align: left;
-    width: 100%;
+    width: 100vw;
     z-index: 3;
 }
-
 
 header div i {
     padding-left: 13px;
@@ -339,7 +338,26 @@ h3#featureheading {
     text-align: left;
 }
 
+/*a#seemorefeatures {
+    text-decoration: none;
+    color: #fff;
+}*/
 
+/*div#featuresbutton {
+    text-align: center;
+    margin-top: 12px;
+}*/
+
+/*a#seemorefeatures {
+    border: 1px solid gray;
+    border-radius: 6px;
+    background: #00803e; 
+    padding: 10px;
+}*/
+
+/*a#seemorefeatures:hover {
+    color: #ff8300;
+}*/
 /************************End of Features  - Products**************************/
 
 
@@ -702,83 +720,6 @@ section.admindashboard{
 
 
 
-/*********************************************************************/
-/******************************ORDER HISTORY********************************/
-/*******************************************************************/
-
-.orderhistorytitle {
-    height: 60px;
-    width: 100%;
-    background: #f2f2f2;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center; 
-}
-
-.orderhistorytitle h3 {
-    color: green;
-}
-
-td.imagetd, th.imagetitle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.imagetd img {
-    width: 200px;
-    height: 100px;
-}
-
-.orderhistory {
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-
-}
-
-.orderhistory td, .orderhistory th {
-    border: 1px solid #ddd;
-    padding: 8px;
-}
-
-.orderhistory tr:nth-child(even){background-color: #f2f2f2;}
-
-.orderhistory tr:hover {background-color: #ddd;}
-
-.orderhistory th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #c7ecee;
-    color: white;
-}
-
-
-/*********************************************************************/
-/******************************My Account Page********************************/
-/*******************************************************************/
-
-
-.myaccounttable {
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-}
-
-.myaccounttable td, .myaccounttable th {
-    border: 1px solid #ddd;
-    padding: 8px;
-}
-
-.firstcolumn {
-    width: 30%;
-}
-.myaccounttable tr:nth-child(even){background-color: #f2f2f2;}
-
-.myaccounttable tr:hover {background-color: #ddd;}
-
-
 
 /*********************************************************************/
 /******************************Footer********************************/
@@ -899,10 +840,7 @@ div.copyrightinfo {
     .admindashboard.generalfeatures {
         margin-right: 5%;
     }
-    
-    .orderhistorydiv {
-        overflow-x: auto;
-    }
+
 } 
    
 
