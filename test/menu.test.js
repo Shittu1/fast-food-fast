@@ -7,9 +7,9 @@ let should = chai.should();
 
 describe('auth API testing', () => {
 	//test for signup API
-	it('should SIGNUP user successfully on /signup POST', (done) => {
+	it('ADD A MEAL option to the menu on /menu POST', (done) => {
 		chai.request(app)
-			.post('/auth/signup')
+			.post('/menu')
 			.send({
 		      	firstname: "Adams",
 		      	lastname: "Shittu",
@@ -17,23 +17,24 @@ describe('auth API testing', () => {
 		      	password: "abc"
 				})
 			.end((err, res) => {
-				res.body.should.have.property('auth');
-				res.body.auth.should.be.equal(true);
+				res.body.should.have.property('success');
+				res.body.success.should.be.equal('true');
 				done();
 			});
 	});
 
-	it('should LOGIN user successfully on /login POST', (done) => {
+	it('GET available menu', (done) => {
 		chai.request(app)
-			.post('/auth/login')
+			.get('/menu')
 			.send({
-		      	email: "shttdms@gmail.com",
+		      	firstname: "Adams",
+		      	lastname: "Shittu",
+		      	email: "abc@gmail.com",
 		      	password: "abc"
 				})
 			.end((err, res) => {
-				console.log(res.body);
-				res.body.should.have.property('auth');
-				res.body.auth.should.be.equal(true);
+				res.body.should.have.property('success');
+				res.body.success.should.be.equal('true');
 				done();
 			});
 	});
